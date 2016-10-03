@@ -75,6 +75,10 @@
 	<!-- home scrolling -->
 	<link rel='stylesheet prefetch' href='js/jquery.fullPage.css'>
 
+	<!-- 50% viewport -->
+	<link href="stylesheets/vmin.css" type="text/css" rel="stylesheet" />
+
+
 	</head>
 	<body>
 
@@ -263,6 +267,17 @@
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js'></script>
 	<script src="js/home.js"></script>
+
+	<!-- 50% viewport -->
+
+	<script src="js/viewport-units-buggyfill.js"></script>
+	<script src="js/viewport-units-buggyfill.hacks.js"></script>
+	<script>
+		window.viewportUnitsBuggyfill.init({
+			refreshDebounceWait: 50,
+			hacks: window.viewportUnitsBuggyfillHacks
+		});
+	</script>
 
 
 	</body>
