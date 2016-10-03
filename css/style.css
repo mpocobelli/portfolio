@@ -304,9 +304,8 @@
   max-width: 842px;
   height: 50vh;
   /* IE9 and 10 */
-  content: 'viewport-units-buggyfill;'  'width: 50vmin;' 'height: 50vmin;' ;
+  content: 'viewport-units-buggyfill;'  'width: 50vh;' 'height: 50vh;' ;
 
-  border: solid;
 }
 
   section:nth-of-type(1) {
