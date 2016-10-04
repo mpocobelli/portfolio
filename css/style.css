@@ -725,7 +725,10 @@
   position: fixed;
   z-index: 1901;
   width: 270px;
-  background: black;
+
+  background: black; /* fallback for old browsers */
+  opacity: 0.9;
+
   top: 0;
   right: 0;
   top: 0;
@@ -748,9 +751,6 @@
   }
 }
 
-.gtco-logo {
-  color: red;
-}
 
 .offcanvas #gtco-offcanvas {
   -moz-transform: translateX(0px);
@@ -773,12 +773,30 @@
   padding: 0;
   margin: 0;
 }
+
+#gtco-offcanvas ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: -49px;
+  margin-left: -10px;
+}
+
 #gtco-offcanvas ul li {
   padding: 0;
   margin: 0;
   list-style: none;
   margin-top: 20px;
 }
+
+.logo{
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  margin-top: 49px;
+}
+
+
 
 #gtco-offcanvas ul li a.active{
   color: white;
