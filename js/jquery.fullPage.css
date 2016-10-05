@@ -154,9 +154,9 @@ html.fp-enabled,
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span{
-    height: 4px;
+    height: 3px;
     width: 12px;
-    margin: 1px 0px 0px 12px;
+    margin: 0px 0px 0px 12px;
     /*border-radius: 100%;*/
  }
 #fp-nav ul li a span,
@@ -164,7 +164,7 @@ html.fp-enabled,
     /*border-radius: 50%;*/
     position: absolute;
     z-index: 1;
-    height: 4px;
+    height: 3px;
     width: 4px;
     border: 0;
     background: #fff;
