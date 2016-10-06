@@ -46,7 +46,7 @@
     padding-top: 0px;
     /*font-family: "Vollkorn";*/
     font-family: "Raleway", Arial, sans-serif;
-    font-weight: 600;
+    font-weight: 800;
 
     font-size: 21px;
     line-height: 31.5px;
@@ -100,6 +100,7 @@
     /*padding-bottom: 32.5px;*/
     /*padding-top: 42px;*/
     margin-bottom: 42px;
+    max-width: 751px;
     }
 
 
@@ -266,7 +267,24 @@
     position: relative;
 
   }*/
-
+.mauro-cover {
+  margin: 0 auto;
+  /*
+   * Using border-box sizing, to ensure the box
+   * is exactly 80vw wide, no matter how much padding
+   * or border.
+   */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /*padding: 10px;*/
+  /*
+   * Modern browsers.
+   */
+  height: 100vh;
+  /* IE9 and 10 */
+  content: 'viewport-units-buggyfill;'  'width: 100vh;' 'height: 100vh;' ;
+}
   /*.mauro-cover-container {
     height: 200px;
     padding-left: 0px;
@@ -461,6 +479,8 @@
 
   }
 
+
+
   section:nth-of-type(4) {
 
   background: #eb5c3d;
@@ -474,6 +494,19 @@
 
   }
 
+  .mauro-cover-coloe-bg {
+
+  background:  #eb5c3d;
+  background: -moz-linear-gradient(top,  #eb5c3d 0%, #eb5562 100%);
+  background: -webkit-linear-gradient(top,  #eb5c3d 0%,#eb5562 100%);
+  background: linear-gradient(to bottom,  #eb5c3d 0%,#eb5562 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb5c3d', endColorstr='#eb5562',GradientType=0 );
+
+  position: relative;
+  z-index: -3;
+
+  }
+
   .mauro-cover-coloe-title {
 
     background: url(../images/cover-coloe-title.png) no-repeat bottom center;
@@ -481,6 +514,8 @@
     -moz-background-size: contain;
     -o-background-size: contain;
     background-size: contain;
+
+
 
   }
 
