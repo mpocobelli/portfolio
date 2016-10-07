@@ -9,8 +9,9 @@
     body {
     font-family: "Raleway", Arial, sans-serif;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 1.7;
+    font-size: 22.4px;
+    line-height: 1.6em;
+    letter-spacing: 0.216667px
     color: #7f7f7f;
     background: #fff;
     height: 100%;
@@ -34,8 +35,6 @@
   p {
     /*margin-bottom: 30px;*/
     font-family: "Vollkorn";
-    font-size: 21px;
-    line-height: 31.5px;
     color: #312e32;
     margin-bottom: 42px;
   }
@@ -44,12 +43,12 @@
     margin-top: 0px;
     margin-bottom: 8px;
     padding-top: 0px;
-    /*font-family: "Vollkorn";*/
+
+    font-size: 22.4px;
+    line-height: 1.6em;
+
     font-family: "Raleway", Arial, sans-serif;
     font-weight: 800;
-
-    font-size: 21px;
-    line-height: 31.5px;
 
     color: #312e32;
     text-transform: uppercase;
@@ -324,14 +323,19 @@
   -webkit-animation-timing-function: ease;
 }
 
-.animation-1 {
+/*.animation-1 {
   animation-name: appear;
   animation-duration: 1s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
-  -webkit-animation: appear 1s 1; /* Chrome, Safari, Opera */
+  -webkit-animation: appear 1s 1;
   -webkit-animation-timing-function: ease;
-}
+}*/
+
+@-moz-keyframes appear { /* older versions of FF */
+  from {opacity: 0;}
+  to {opacity: 1;}
+  }
 
 @-webkit-keyframes appear {
   from {opacity: 0;}
