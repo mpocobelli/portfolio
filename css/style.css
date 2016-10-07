@@ -315,6 +315,28 @@
 
 }
 
+.animation {
+  animation-name: appear;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  -webkit-animation: appear 4s 1; /* Chrome, Safari, Opera */
+  -webkit-animation-timing-function: ease;
+}
+
+.animation-1 {
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  -webkit-animation: appear 1s 1; /* Chrome, Safari, Opera */
+  -webkit-animation-timing-function: ease;
+}
+
+@-webkit-keyframes appear {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
   section:nth-of-type(1) {
 
     background: #00a5a5; /* Old browsers */
@@ -569,6 +591,9 @@
     }*/
 
 /*////////////////// coloe page ///////////////////*/
+.story {
+  padding-top: 3em;
+}
 
 .story-coloe-bg{
   background-color: #fbefe2;
