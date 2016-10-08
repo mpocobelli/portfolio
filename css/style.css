@@ -7,11 +7,9 @@
   }
 
     body {
-    font-family: "Raleway", Arial, sans-serif;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
     font-weight: 400;
-    font-size: 22.4px;
-    line-height: 1.6em;
-    letter-spacing: 0.216667px
+    font-size: 16px;
     color: #7f7f7f;
     background: #fff;
     height: 100%;
@@ -26,6 +24,7 @@
     -o-transition: 0.5s;
     transition: 0.5s;
   }
+
   a:hover, a:active, a:focus {
     color: #eb633d;
     outline: none;
@@ -33,49 +32,55 @@
   }
 
   p {
-    /*margin-bottom: 30px;*/
+
     font-family: "Vollkorn";
     color: #312e32;
-    margin-bottom: 42px;
+
+    font-size: 19.2px;
+    line-height: 1.6em;
+    vertical-align: baseline;
+
+    letter-spacing: 0.2px;
+    word-spacing: 0px;
+
+    /*margin-bottom: 42px;*/
+
   }
 
   h1, h2, h3, h4, h5, h6, figure {
-    margin-top: 0px;
-    margin-bottom: 8px;
-    padding-top: 0px;
-
-    font-size: 22.4px;
-    line-height: 1.6em;
 
     font-family: "Raleway", Arial, sans-serif;
     font-weight: 800;
-
     color: #312e32;
     text-transform: uppercase;
-    /*margin: 0 0 30px 0;*/
-  }
 
-    /*Small devices (landscape phones, 544px and up)*/
-    @media (min-width: 544px) {
-    p, h1, h2, h3, h4, h5, h6, figure {
-    font-size: 21px;
-    line-height: 30px;
-    }
-    }
+    font-size: 19.2px;
+    line-height: 1.6em;
+    vertical-align: baseline;
+
+    letter-spacing: 0.2px;
+    word-spacing: 0px;
+
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding-top: 0px;
+
+  }
 
     /*// Medium devices (tablets, 768px and up)*/
     @media (min-width: 768px) {
       p, h1, h2, h3, h4, h5, h6, figure {
-      font-size: 21px;
-      line-height: 33px;
+
+        font-size: 20.8px
+
       }
     }
 
     /*// Large devices (desktops, 992px and up)*/
     @media (min-width: 992px) {
     p, h1, h2, h3, h4, h5, h6, figure {
-    font-size: 25px;
-    line-height: 40px;
+
+      font-size: 22.4px
     }
     }
 
@@ -98,7 +103,8 @@
   img {
     /*padding-bottom: 32.5px;*/
     /*padding-top: 42px;*/
-    margin-bottom: 42px;
+    margin-bottom: 70px;
+    margin-top: 70px;
     max-width: 751px;
     }
 
@@ -596,7 +602,7 @@
 
 /*////////////////// coloe page ///////////////////*/
 .story {
-  padding-top: 3em;
+  /*padding-top: 10em;*/
 }
 
 .story-coloe-bg{
