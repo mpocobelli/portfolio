@@ -264,14 +264,6 @@
 
 /*////////////////// COVERS ///////////////////*/
 
-  /*.mauro-cover {
-
-    min-height: 100vh;
-    padding-left: 0px;
-    padding-right: 0px;
-    position: relative;
-
-  }*/
 .mauro-cover {
   margin: 0 auto;
   /*
@@ -290,14 +282,7 @@
   /* IE9 and 10 */
   content: 'viewport-units-buggyfill;'  'width: 100vh;' 'height: 100vh;' ;
 }
-  /*.mauro-cover-container {
-    height: 200px;
-    padding-left: 0px;
-    padding-right: 0px;
-    max-width: 842px;
-    position: relative;
-    border: solid;
-  }*/
+
 
 .mauro-cover-container {
   margin: 0 auto;
@@ -329,14 +314,6 @@
   -webkit-animation-timing-function: ease;
 }
 
-/*.animation-1 {
-  animation-name: appear;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
-  -webkit-animation: appear 1s 1;
-  -webkit-animation-timing-function: ease;
-}*/
 
 @-moz-keyframes appear { /* older versions of FF */
   from {opacity: 0;}
@@ -347,6 +324,30 @@
   from {opacity: 0;}
   to {opacity: 1;}
 }
+
+  .cover-bottom {
+  -moz-box-shadow: 0px 0px 20px 1px rgba(40, 40, 40, 0.2);
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(40, 40, 40, 0.2);
+  box-shadow: 0px 0px 20px 1px rgba(40, 40, 40, 0.2);
+
+  opacity: 0.9;
+
+
+  }
+
+  .cover-bottom:hover {
+
+  /*-moz-transform: translateY(-30px);
+  -webkit-transform: translateY(-30px);
+  -ms-transform: translateY(-30px);
+  -o-transform: translateY(-30px);
+  transform: translateY(-30x);
+  transition: transform 0.7s ease-in-out;*/
+
+  opacity: 1;
+
+  }
+
   section:nth-of-type(1) {
 
     background: #00a5a5; /* Old browsers */
@@ -359,6 +360,20 @@
 
   }
 
+  .mauro-cover-ll-bg {
+
+    background: #00a5a5; /* Old browsers */
+    background: -moz-radial-gradient(bottom, circle cover, #00a5a5 0%, #19327f 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(bottom, circle cover, #00a5a5 0%,#19327f 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(circle at bottom, #00a5a5 0%,#19327f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a5a5', endColorstr='#19327f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+  position: relative;
+  z-index: -3;
+
+  }
+
   .mauro-cover-LL-title {
 
     background: url(../images/cover-LL-title.png) no-repeat bottom center;
@@ -368,6 +383,18 @@
     background-size: contain;
 
   }
+
+  .mauro-cover-LL-title-bottom {
+
+    background: url(../images/cover-LL-title-bottom.png) no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+
+
+  }
+
 
   .mauro-cover-LL-project {
 
@@ -424,9 +451,32 @@
 
   }
 
+  .mauro-cover-nadir-bg {
+
+    background: #000000; /* Old browsers */
+    background: -moz-linear-gradient(top,  #000000 0%, #234e79 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #000000 0%,#234e79 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #000000 0%,#234e79 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#234e79',GradientType=0 ); /* IE6-9 */
+
+  position: relative;
+  z-index: -3;
+
+  }
+
   .mauro-cover-nadir-title {
 
-    background: url(../images/cover-nadir-title.png) no-repeat bottom center;
+    background: url(../images/cover-nadir-title-bottom.png) no-repeat bottom center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+
+  }
+
+  .mauro-cover-nadir-bottom {
+
+    background: url(../images/cover-nadir-title.png) no-repeat center center;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -474,9 +524,32 @@
 
   }
 
+  .mauro-cover-as-bg {
+
+    background: #d5ff83;
+    background: -moz-linear-gradient(45deg,  #d5ff83 0%, #ffc56d 100%);
+    background: -webkit-linear-gradient(45deg,  #d5ff83 0%,#ffc56d 100%);
+    background: linear-gradient(45deg,  #d5ff83 0%,#ffc56d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5ff83', endColorstr='#ffc56d',GradientType=1 );
+
+  position: relative;
+  z-index: -3;
+
+  }
+
   .mauro-cover-as-title {
 
     background: url(../images/cover-as-title.png) no-repeat bottom center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+
+  }
+
+  .mauro-cover-as-title-bottom {
+
+    background: url(../images/cover-as-title.png) no-repeat center center;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -510,6 +583,7 @@
     z-index: -2;
 
   }
+
 
 
 
@@ -583,7 +657,7 @@
 /*////////////////// cover in stories ///////////////////*/
 
 
-  /*  .mauro-cover-coloe-transition {
+  /*  .cover-coloe-transition {
       background-color: #faf1e4;
       height: 30px;
       width: 100%;
@@ -910,4 +984,12 @@
   -ms-transform: rotate(-180deg);
   -o-transform: rotate(-180deg);
   transform: rotate(-180deg);
+}
+
+/* texting new menu
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.footer {
+  padding: 0px;
+
 }
