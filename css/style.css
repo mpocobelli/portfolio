@@ -101,8 +101,6 @@
   }
 
   img {
-    /*padding-bottom: 32.5px;*/
-    /*padding-top: 42px;*/
     margin-bottom: 70px;
     margin-top: 70px;
     max-width: 751px;
@@ -336,13 +334,6 @@
   }
 
   .cover-bottom:hover {
-
-  /*-moz-transform: translateY(-30px);
-  -webkit-transform: translateY(-30px);
-  -ms-transform: translateY(-30px);
-  -o-transform: translateY(-30px);
-  transform: translateY(-30x);
-  transition: transform 0.7s ease-in-out;*/
 
   opacity: 1;
 
@@ -654,49 +645,32 @@
   }
 
 
-/*////////////////// cover in stories ///////////////////*/
+/*////////////////// stories ///////////////////*/
 
-
-  /*  .cover-coloe-transition {
-      background-color: #faf1e4;
-      height: 30px;
-      width: 100%;
-      position: absolute;
-      bottom: -30px;
-    }
-
-   a:hover {
-      -moz-transform: translateY(-30px);
-      -webkit-transform: translateY(-30px);
-      -ms-transform: translateY(-30px);
-      -o-transform: translateY(-30px);
-      transform: translateY(-30x);
-      transition: transform 0.7s ease-in-out;
-    }*/
-
-/*////////////////// coloe page ///////////////////*/
-.story {
-  /*padding-top: 10em;*/
-}
 
 .story-coloe-bg{
   background-color: #fbefe2;
   z-index: -100;
 }
 
-.coloe-hr {
-
-  border-top: 1px solid #000;
-  width: 100vw;
-  position: relative;
-  margin-top: -42px;
-  margin-bottom: 0px;
-}
-
 .mauro-content {
   margin-top: 42px;
 }
 
+.story-as-bg{
+  background-color: #000;
+  z-index: -100;
+  color: white;
+}
+
+.story-as {
+  color: white !important;
+}
+
+#as-img {
+  margin-top:15px;
+  margin-bottom:15px;
+}
 
   /*Medium devices (tablets, 768px and up)*/
   @media (min-width: 768px) {
