@@ -106,159 +106,22 @@
     max-width: 751px;
     }
 
+#quote {
+  font-family: "Vollkorn";
+  font-style: italic;
+  color: #312e32;
 
-/*////////////////// NAVBAR ///////////////////*/
+  font-size: 24.2px;
+  line-height: 1.6em;
+  vertical-align: baseline;
 
-  /*.mauro-header-fixed {
-    position: relative;
-    width: 100%;
-    background-color: transparent;
-  }
+  letter-spacing: 0.2px;
+  word-spacing: 0px;
 
-  header {
-    margin-top: 7px;
-    height: 64px;
-    position: fixed;
-    width: 100%;
-    top:0;
-    left: 0;
-    z-index: 99999;
-
-    background-color: transparent;
-    opacity: 0.96;
-    border-style: none;
+  margin-bottom: 35px;
 
 
-    transition: top 0.3s ease-out;
-    -webkit-transition: top 0.3s ease-out;
-    -moz-transition: top 0.3s ease-out;
-    -o-transition: top 0.3s ease-out;
-
-  }*/
-
-  /*.navbar {
-    height: 64px;
-    margin: 0px;
-  }
-
-  .navbar-mauro {
-    height: 64px;
-    border-radius: 0px;
-    border-width: 0px;
-    background-color: transparent;
-  }
-
-  .nav-up {
-      top: -55px;
-  }
-
-  /* BRAND MOBILE FIRST */
-
-  /*.navbar-default .navbar-brand {
-   height: 64px;
-   line-height: 27px;
-   font-size: 28px;
-   font-weight: 700;
-   color:#312e32;
-  }
-
-  .navbar-default .navbar-brand:hover {
-  color:#312e32;
-  }
-
-  #brand-mauro {
-    position: absolute;
-    left: 0;
-    height: 65px;
-    float: left;
-    padding-left: -6px;
-    margin-left: -6px;
-  }
-
-  #brand-mauro-in {
-    margin-top: 5px;
-    color: white;
-  }*/
-
-  /* LINKS MOBILE FIRST */
-
-  /*.navbar-default .navbar-right {
-    margin-right: 10px;
-    }
-
-  .navbar-default .navbar-right > li > a{
-    font-weight: 700;
-    font: bold;
-    text-decoration: none;
-    height: 50px;
-    line-height: 32px;
-    color: white;
-    font-size: 20px;
-    opacity: 0.4;
-  }*/
-  /*adding hover*/
-
-  /*.navbar-default .navbar-right > li > a:hover {
-    color: white;
-    opacity: 1;
-  }
-
-  .navbar-default .navbar-right > li > a.active {
-    color: white;
-    opacity: 1;
-  }
-
-  .nav > li > a:hover, .nav > li > a:focus {
-    background-color: transparent;
-    color: #eb633d;
-  }*/
-
-  /* HAMBURGHER */
-
-  /*.toggle-mauro {
-    padding-right: 10px;
-    border-style: none;
-    height: 64px;
-    margin: 0px;
-    background-color: transparent;
-    z-index: 9999;
-  }
-
-  .navbar-default .toggle-mauro:hover {
-    background-color: transparent;
-  }
-
-  .navbar-default .navbar-toggle .icon-bar{
-    background-color: white;
-    border-radius: 0px;
-  }*/
-
-  /*taking off collapse*/
-
-  /*.navbar-header {
-         float: none;
-     }
-     .navbar-toggle {
-         display: block;
-     }
-     .navbar-collapse {
-         border-top: 1px solid transparent;
-         box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-     }
-     .navbar-collapse.collapse {
-         display: none!important;
-     }
-     .navbar-nav {
-         float: none!important;
-     }
-     .navbar-nav>li {
-         float: none;
-     }
-     .navbar-nav>li>a {
-         padding-top: 10px;
-         padding-bottom: 10px;
-     }*/
-
+}
 
 /*////////////////// COVERS ///////////////////*/
 
@@ -648,13 +511,13 @@
 /*////////////////// stories ///////////////////*/
 
 
+.mauro-content {
+  margin-top: 42px;
+}
+
 .story-coloe-bg{
   background-color: #fbefe2;
   z-index: -100;
-}
-
-.mauro-content {
-  margin-top: 42px;
 }
 
 .story-as-bg{
@@ -672,28 +535,18 @@
   margin-bottom:15px;
 }
 
-  /*Medium devices (tablets, 768px and up)*/
-  @media (min-width: 768px) {
-    footer p {
-    font-size: 2.5em;
-    line-height: 1.2em;
-    }
-  }
+.story-nadir-bg {
+  background-color: #f7fbf6;
+}
 
-  /*Medium devices (tablets, 768px and up)*/
-  @media (min-width: 768px) {
-    footer ul li {
-    display: block;
-    }
-  }
+#nadir-links {
+  color: #279fa7;
+  text-decoration: none;
+}
 
-  /*Medium devices (tablets, 768px and up)*/
-  @media (min-width: 768px) {
-    #social-slash {
-    visibility: hidden;
-    }
-  }
-
+#nadir-img {
+  margin: 0;
+}
   /* home scrolling
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
