@@ -67,6 +67,29 @@
 
   }
 
+  q {
+    font-family: "Vollkorn";
+    font-style: italic;
+    color: #312e32;
+
+    font-size: 21.6px;
+    line-height: 1.6em;
+    vertical-align: baseline;
+
+    letter-spacing: 0.2px;
+    word-spacing: 0px;
+
+    margin-bottom: 35px;
+
+  }
+
+  q:before {
+    content: "\f10d";
+    content: no-open-quote;
+    content: no-close-quote;
+  }
+
+
     /*// Medium devices (tablets, 768px and up)*/
     @media (min-width: 768px) {
       p, h1, h2, h3, h4, h5, h6, figure {
@@ -81,6 +104,22 @@
     p, h1, h2, h3, h4, h5, h6, figure {
 
       font-size: 22.4px
+    }
+    }
+
+    /*// Medium devices (tablets, 768px and up)*/
+    @media (min-width: 768px) {
+      q {
+
+        font-size: 23.4px
+
+      }
+    }
+
+    /*// Large devices (desktops, 992px and up)*/
+    @media (min-width: 992px) {
+    q {
+      font-size: 25.2px
     }
     }
 
@@ -106,22 +145,7 @@
     max-width: 751px;
     }
 
-#quote {
-  font-family: "Vollkorn";
-  font-style: italic;
-  color: #312e32;
 
-  font-size: 24.2px;
-  line-height: 1.6em;
-  vertical-align: baseline;
-
-  letter-spacing: 0.2px;
-  word-spacing: 0px;
-
-  margin-bottom: 35px;
-
-
-}
 
 /*////////////////// COVERS ///////////////////*/
 
