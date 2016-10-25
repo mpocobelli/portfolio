@@ -89,6 +89,10 @@
     content: no-close-quote;
   }
 
+  #special {
+    font-size: 62px;
+    line-height: 1.3em;
+  }
 
     /*// Medium devices (tablets, 768px and up)*/
     @media (min-width: 768px) {
