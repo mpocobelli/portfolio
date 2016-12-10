@@ -1,0 +1,7 @@
+TO DO
+- rifare Nadir style table
+- foto grande quando la apri oppure cambia altezza quando ridimensioni.
+- tradurre LL TREE video
+- fare gif logo
+
+- sistemare img (tutto)

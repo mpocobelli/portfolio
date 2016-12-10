@@ -56,7 +56,7 @@
 
 	var navigation = function() {
 
-		$('body').on('click', '#gtco-offcanvas ul a:not([class="external"]), .main-nav a:not([class="external"])', function(event){
+		$('body').on('click', ' .main-nav a:not([class="external"])', function(event){
 			var section = $(this).data('nav-section');
 				if ( $('[data-section="' + section + '"]').length ) {
 			    	$('html, body').animate({
@@ -334,7 +334,7 @@
 
 			var $this = $(this);
 
-			$this.closest('.gtco-accordion').find('.gtco-accordion-content').slideToggle(400, 'easeInOutExpo');
+			$this.closest('.gtco-accordion').find('.gtco-accordion-content').slideToggle(300, 'easeInOutExpo');
 			if ($this.closest('.gtco-accordion').hasClass('active')) {
 				$this.closest('.gtco-accordion').removeClass('active');
 			} else {

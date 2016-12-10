@@ -28,7 +28,6 @@
   a:hover, a:active, a:focus {
     color: #eb633d;
     outline: none;
-    background-color: transparent;
   }
 
   p {
@@ -47,7 +46,7 @@
 
   }
 
-  h1, h2, h3, h4, h5, h6, figure {
+  h1, h2, h4, h5, h6, figure {
 
     font-family: "Raleway", Arial, sans-serif;
     font-weight: 800;
@@ -66,6 +65,12 @@
     padding-top: 0px;
 
   }
+
+h3 {
+  font-family: "Raleway", Arial, sans-serif;
+  font-weight: 800;
+  color: #312e32;
+}
 
   q {
     font-family: "Vollkorn";
@@ -564,7 +569,9 @@
 }
 
 .story-nadir-bg {
-  background-color: #f7fbf6;
+  /*background-color: #f7fbf6;*/
+  background-color: #f3f5f6;
+
 }
 
 #nadir-links {
@@ -575,7 +582,9 @@
 #nadir-img {
   margin: 0;
 }
+
   /* home scrolling
+
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
   #fp-nav ul li a span,
