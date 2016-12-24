@@ -154,7 +154,7 @@
 
 		<div class="col-sm-6 footer">
 			<div class="cover-bottom">
-				<a href="#">
+				<a href="ll.html">
 					<div class="mauro-cover-ll-bg">
 							<div class="mauro-cover-container mauro-cover-LL-title-bottom"></div>
 							<div class="mauro-cover-LL-bg-all"></div>
@@ -165,11 +165,11 @@
 
 		<div class="col-sm-6 footer">
 			<div class="cover-bottom">
-				<a href="#">
-					<div class="mauro-cover-nadir-bg">
-							<div class="mauro-cover-container mauro-cover-nadir-bottom"></div>
-							<div class="mauro-cover-nadir-bg-all"></div>
-					</div>
+				<a href="as.html">
+					<div class="mauro-cover-as-bg">
+							<div class="mauro-cover-container mauro-cover-as-title-bottom"></div>
+							<div class="mauro-cover-as-bg-all"></div>
+						</div>
 				</a>
 			</div>
 		</div>
@@ -254,7 +254,8 @@
 			$(el).justifiedGallery({
 					rel: 'gal' + i,
 					rowHeight: 280,
-					margins:5
+					margins:5,
+					lastRow:'justify'
 			}).on('jg.complete', function() {
 					if (i == 0) $('.swipeboxEx a').swipebox(); //swipebox, wants to be called only once to work properly
 			});
