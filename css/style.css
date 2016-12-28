@@ -214,7 +214,7 @@ h3 {
    * Modern browsers.
    */
   max-width: 842px;
-  height: 57vh;
+  height: 52vh;
   /* IE9 and 10 */
   content: 'viewport-units-buggyfill;'  'width: 50vh;' 'height: 50vh;' ;
 
@@ -240,6 +240,7 @@ h3 {
   bottom: 0;
   margin: auto;
   margin-bottom: 20px;
+  margin-left: -15px;
 
   /* IE9 and 10 */
   content: 'viewport-units-buggyfill;'  'width: 50vh;' 'height: 50vh;' ;
@@ -279,10 +280,10 @@ h3 {
   section:nth-of-type(1) {
 
     background: #322e32; /* fallback for old browsers */
-    background: -moz-radial-gradient(circle cover, #322e32 0%, #2e2a2e 100%);
-    background: -webkit-radial-gradient(circle cover, #322e32 0%,#2e2a2e 100%);
-    background: radial-gradient(circle, #322e32 0%,#2e2a2e 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#322e32', endColorstr='#2e2a2e',GradientType=1 );
+    background: -moz-radial-gradient(circle cover, #322e32 0%, #000 100%);
+    background: -webkit-radial-gradient(circle cover, #322e32 0%,#191819 100%);
+    background: radial-gradient(circle, #322e32 0%,#191819 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#322e32', endColorstr='#191819',GradientType=1 );
     z-index: -2;
 
   }
@@ -307,21 +308,15 @@ h3 {
     right: 0;
     padding: 0;
 
-    opacity: 0.3;
+    opacity: 0.35;
 
     z-index: -2;
 
   }
 
   .mauro-cover-mm-project {
-
-    /*background: url(../images/cover-LL-project.png) no-repeat bottom center;*/
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
     text-align: center;
-
+    padding-left: 0px;
   }
 
   .cover-scroll {
@@ -373,7 +368,6 @@ h3 {
     -moz-background-size: contain;
     -o-background-size: contain;
     background-size: contain;
-
 
   }
 
