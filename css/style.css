@@ -196,7 +196,6 @@ h3 {
   height: 50vh;
   /* IE9 and 10 */
   content: 'viewport-units-buggyfill;'  'width: 50vh;' 'height: 50vh;' ;
-
 }
 
 .mauro-cover-container-2 {
@@ -246,6 +245,27 @@ h3 {
   content: 'viewport-units-buggyfill;'  'width: 50vh;' 'height: 50vh;' ;
 }
 
+.mauro-cover-container-4 {
+  margin: 0 auto;
+  /*
+   * Using border-box sizing, to ensure the box
+   * is exactly 80vw wide, no matter how much padding
+   * or border.
+   */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /*padding: 10px;*/
+  /*
+   * Modern browsers.
+   */
+  max-width: 842px;
+  height: 40vh;
+  /* IE9 and 10 */
+  content: 'viewport-units-buggyfill;'  'width: 50vh;' 'height: 50vh;' ;
+}
+
+
 .animation {
   animation-name: appear;
   animation-duration: 3s;
@@ -289,7 +309,7 @@ h3 {
   }
 
   .mauro-cover-mm-title {
-    background: url(../images/cover-mm-title-2.png) no-repeat bottom center;
+    background: url(../images/cover-mm-title.png) no-repeat bottom center;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
