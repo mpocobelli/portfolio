@@ -39,7 +39,7 @@
     line-height: 1.6em;
     vertical-align: baseline;
 
-    letter-spacing: 0.2px;
+    /*letter-spacing: 0.2px;*/
     word-spacing: 0px;
 
     /*margin-bottom: 42px;*/
@@ -72,7 +72,7 @@ h3 {
   color: #312e32;
 }
 
-  q {
+q {
     font-family: "Vollkorn";
     font-style: italic;
     color: #312e32;
@@ -299,12 +299,12 @@ h3 {
 
   section:nth-of-type(1) {
 
-    background: #322e32; /* fallback for old browsers */
-    background: -moz-radial-gradient(circle cover, #322e32 0%, #000 100%);
-    background: -webkit-radial-gradient(circle cover, #322e32 0%,#191819 100%);
-    background: radial-gradient(circle, #322e32 0%,#191819 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#322e32', endColorstr='#191819',GradientType=1 );
-    z-index: -2;
+    background-image: linear-gradient(
+		rgba(255,255,255,0.6),
+		rgba(0,0,0,0.6)
+	);
+
+    /*z-index: -2;*/
 
   }
 
@@ -316,7 +316,7 @@ h3 {
     background-size: contain;
   }
 
-  .mauro-cover-mm-bg-all {
+  #mauro-cover-mm-bg-all {
 
     background: url(../images/cover-mm-bg.png) bottom center;
     background-repeat: repeat-y;
@@ -328,9 +328,8 @@ h3 {
     right: 0;
     padding: 0;
 
-    opacity: 0.35;
+    opacity: 0.8;
 
-    z-index: -2;
 
   }
 
