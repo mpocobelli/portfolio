@@ -403,7 +403,7 @@ q {
 
   .mauro-cover-LL-bg-bottom {
 
-      background-image: url(../images/LL-pattern.png);
+      background-image: url(../images/cover-LL-pattern.png);
       background-repeat: repeat-x;
       background-size: contain;
       min-height: 40px;
@@ -421,7 +421,7 @@ q {
 
   .mauro-cover-LL-bg-all {
 
-    background: url(../images/LL-pattern-2.png) repeat repeat;
+    background: url(../images/cover-LL-pattern-2.png) repeat repeat;
 
     position: absolute;
     height:100%;
@@ -654,6 +654,14 @@ q {
 
 .mauro-content {
   margin-top: 42px;
+}
+
+.ll-07 {
+  width:100%; background: #1566aa;
+  background: -moz-linear-gradient(left,  #1566aa 50%, #c24953 50%, #c24953 100%);
+  background: -webkit-linear-gradient(left,  #1566aa 50%,#c24953 50%,#c24953 100%);
+  background: linear-gradient(to right,  #1566aa 50%,#c24953 50%,#c24953 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1566aa', endColorstr='#c24953',GradientType=1 ); margin-top:-10px;
 }
 
 .story-coloe-bg{
@@ -910,6 +918,7 @@ q {
   font-weight: 700;
   color: white;
   margin-top: 49px;
+  line-height: 1.2em;
 }
 
 
