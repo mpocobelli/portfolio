@@ -16,31 +16,37 @@
 	<meta name="keywords" content="Mauro Pocobelli, graphic design, freelance, branding, editorial, typography, digital project" />
 	<meta name="author" content="Mauro Pocobelli" />
 
-	<!-- Facebook and Twitter integration -->
+	<!-- Facebook integration -->
 	<meta property="og:title" content="Mauro Pocobelli | About" />
 	<meta property="og:image" content="http://www.mauropocobelli.com/images/thumbnails.png" />
-	<meta property="og:image:secure_url" content="http://www.mauropocobelli.com/images/thumbnails.png" />
 	<meta property="og:url" content="http://www.mauropocobelli.com/about.html" />
-	<meta property="og:site_name" content="Mauro Pocobelli Portfolio" />
 	<meta property="og:site_name" content="Mauro Pocobelli Portfolio" />
 	<meta property="og:description" content="Graphic Design Portfolio" />
 	<meta property="og:type" content="Portfolio" />
 
+	<!-- Twitter integration -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@mauropocobelli">
+	<meta name="twitter:creator" content="@mauropocobelli">
 	<meta name="twitter:title" content="Mauro Pocobelli | About" />
+	<meta name="twitter:description" content="Hello! I'm Mauro Pocobelli. Italian graphic designer focused on branding and digital project, based in Cork.">
 	<meta name="twitter:url" content="http://www.mauropocobelli.com/about.html" />
 	<meta name="twitter:image" content="http://www.mauropocobelli.com/images/thumbnails.png" />
 
-	<!-- fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,700" rel="stylesheet">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:600,700,800" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700" rel="stylesheet">
 
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
 	<!-- jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
+
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -73,7 +79,6 @@
 
 	</header>
 
-
 	<main>
 
 		<div class="container-fluid story-nadir-bg" style="min-height:95vh">
@@ -86,8 +91,9 @@
 						<div class="col-xs-12 col-sm-10 col-sm-offset-1  col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 mauro-content">
 							<img src="images/about.png" alt="ayrton senna sentence" width="1140" height="720" class="img-responsive">
 
-							<h1>Graphic Designer connecting people to brand</h1>
-							<p>Itlian graphic designer and freelancer based in Cork graduated at Politecnico di Milano and IUAV University of Venice with honors in 2015. My research is manly focused on branding and digital project. The goal of my last projects like Nadir and Liber Liber is to define the brand’s soul and connect people to it through interactive environments or digital products mixing UX and UI desing. On this website I share my best works, happy surfing!
+							<h1>GRAPHIC DESIGNER CONNECTING PEOPLE TO BRAND</h1>
+							<p>Italian graphic designer and freelancer based in Cork. Graduated at Politecnico di Milano and IUAV University of Venice with honors in 2015. My research is mainly focused on branding and digital projects. The goal of my previous projects, such
+								as Nadir and Liber Liber was to define the brand’s soul and connect people to it through interactive environments or digital products mixing UX and UI design. On this website I share my best work, happy surfing!
 								<br>
 								<br>
 								<a href="images/mauropocobelli_CV.pdf" target="_blank"> Download my CV</a> /
@@ -157,6 +163,9 @@
 		<script src="js/jquery.waypoints.min.js"></script>
 		<!-- MAIN JS -->
 		<script src="js/main.js"></script>
+		<!-- new menu -->
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
+		<script src="js/menu.js"></script>
 
 		<!-- vh fixing-->
 		<script src="js/viewport-units-buggyfill.js"></script>
@@ -167,61 +176,6 @@
 				hacks: window.viewportUnitsBuggyfillHacks
 			});
 		</script>
-
-		<!-- new menu -->
-		<script src="js/menu.js"></script>
-
-		<!-- smooth scrolling -->
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
-		<script src="js/home.js"></script>
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script>
-			$(document).ready(function() {
-				// Add smooth scrolling to all links
-				$("a").on('click', function(event) {
-
-					// Make sure this.hash has a value before overriding default behavior
-					if (this.hash !== "") {
-						// Prevent default anchor click behavior
-						event.preventDefault();
-
-						// Store hash
-						var hash = this.hash;
-
-						// Using jQuery's animate() method to add smooth page scroll
-						// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-						$('html, body').animate({
-							scrollTop: $(hash).offset().top
-						}, 800, function() {
-
-							// Add hash (#) to URL when done scrolling (default click behavior)
-							window.location.hash = hash;
-						});
-					} // End if
-				});
-			});
-		</script>
-
-
-		<!-- gallery -->
-		<script src="js/jquery.justifiedGallery.js"></script>
-		<script src="js/jquery.swipebox.min.js"></script>
-		<script>
-			$('.swipeboxEx').each(function(i, el) {
-				$(el).justifiedGallery({
-					rel: 'gal' + i,
-					rowHeight: 280,
-					margins: 5,
-					lastRow: 'justify'
-				}).on('jg.complete', function() {
-					if (i == 0) $('.swipeboxEx a').swipebox(); //swipebox, wants to be called only once to work properly
-				});
-			});
-		</script>
-
-		<!-- new menu -->
-		<script src="js/menu.js"></script>
 
 	</footer>
 
