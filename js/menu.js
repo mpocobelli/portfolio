@@ -42,6 +42,7 @@
 	    	if ( $('body').hasClass('offcanvas') ) {
     			$('body').removeClass('offcanvas');
     			$('.js-gtco-nav-toggle').removeClass('active');
+});
 	    	}
 	    }
 		});
@@ -67,6 +68,9 @@
 			   if ($('body').hasClass('offcanvas')) {
 			   	$('body').removeClass('offcanvas');
 			   	$('.js-gtco-nav-toggle').removeClass('active');
+					// mauro
+					$('nav li a').on('click', function(){
+			$('.js-gtco-nav-toggle').trigger('click');
 			   }
 		   event.preventDefault();
 		   return false;
@@ -89,7 +93,10 @@
 			.find('li')
 			.removeClass('has-dropdown');
 
+
 		// Hover dropdown menu on mobile
+
+
 		$('.offcanvas-has-dropdown').mouseenter(function(){
 			var $this = $(this);
 

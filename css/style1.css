@@ -1,21 +1,21 @@
   body {
       background: #fff;
       height: 100%;
-      position: relative;
       font-family: "Raleway", Helvetica, Arial, sans-serif;
-      font-weight: 500;
+      font-weight: 400;
       font-size: 16px;
+      line-height: 24px;
       color: #848995;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
   }
 
   h1 {
-      font-weight: 600;
-      font-size: 19.2px;
+      font-weight: 100;
+      font-size: 36px;
       line-height: 40px;
       color: #242a37;
-      margin-bottom: 28px;
+      /*margin-bottom: 28px;*/
   }
 
   q {
@@ -51,12 +51,12 @@
       background-color: #242a37;
   }
 
-  ::-moz-selection {
+   ::-moz-selection {
       color: #fff;
       background-color: #242a37;
   }
 
-  ::selection {
+   ::selection {
       color: #fff;
       background-color: #242a37;
   }
@@ -64,8 +64,7 @@
   .content-wrap {
       margin-bottom: 20vh;
   }
-
-/* bootstrap @media tablet:750px	leptop:970px	desktop:1170px*/
+  /* bootstrap @media tablet:750px	leptop:970px	desktop:1170px*/
 
   @media (min-width: 750px) {
       /*// Medium devices (tablets, 750px and up)*/
@@ -78,8 +77,8 @@
   @media (min-width: 750px) {
       /*// Medium devices (tablets, 750px and up)*/
       h1 {
-          font-size: 24px;
-          line-height: 40px;
+          font-size: 64px;
+          /*line-height: 40px;*/
       }
   }
 
@@ -90,7 +89,6 @@
           line-height: 36px;
       }
   }
-
   /* menu
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -160,6 +158,7 @@
       -webkit-transition: opacity .35s, visibility .35s, height .35s;
       transition: opacity .35s, visibility .35s, height .35s;
       overflow: hidden;
+      z-index: 10;
   }
 
   .overlay.open {
@@ -268,53 +267,68 @@
           left: 0;
       }
   }
-
   /* loader
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
   .pace {
-      -webkit-pointer-events: none;
-      pointer-events: none;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
+    -webkit-pointer-events: none;
+    pointer-events: none;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
   }
 
   .pace-inactive {
-      display: none;
+    display: none;
   }
 
   .pace .pace-progress {
-      background: #fff;
-      position: fixed;
-      z-index: 2000;
-      top: 0;
-      right: 100%;
-      width: 100%;
-      height: 2px;
+    background: #fff;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 2px;
   }
 
   /* covers
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-  .cover {
-      margin: 0 auto; /* Using border-box sizing, to ensure the box */
-      -webkit-box-sizing: border-box; /* Modern browsers.*/
+  .cover2 {
+      margin: 0 auto;
+      /* Using border-box sizing, to ensure the box */
+      -webkit-box-sizing: border-box;
+      /* Modern browsers.*/
       -moz-box-sizing: border-box;
       box-sizing: border-box;
       height: 100vh;
-      content: 'viewport-units-buggyfill;' 'width: 100vh;' 'height: 100vh;'; /* IE9 and 10 */
+      content: 'viewport-units-buggyfill;' 'width: 100vh;' 'height: 100vh;';
+      /* IE9 and 10 */
   }
 
-  .ll-bg, #section1 {
+  .cover {
+      /*padding-top: 300px;*/
+      /*padding-bottom: 70px;*/
+      height: 488px;
+  }
+
+  .ll-cover-image {
+    background: url(../images/LiberLiber-cover.png) no-repeat bottom center;
+    height: 100%;
+    opacity: 0.04;
+    border-style: solid;
+  }
+
+  .ll-cover-color {
       background: #45d1ff; /* Old browsers */
       background: -moz-linear-gradient(top right, #45d1ff 0%, #0090ff 100%); /* FF3.6-15 */
       background: -webkit-linear-gradient(top right, #45d1ff 0%, #0090ff 100%); /* Chrome10-25,Safari5.1-6 */
       background: linear-gradient(top right, #45d1ff 0%, #0090ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45d1ff', endColorstr='#0090ff', GradientType=1); /* IE6-9 fallback on horizontal gradient */
-
       position: relative;
-      z-index: -3;
+      /*z-index: -3;*/
   }
 
   .ll-pattern {
@@ -326,7 +340,7 @@
       right: 0;
       padding: 0;
       opacity: 0.06;
-      z-index: -2;
+      /*z-index: -2;*/
   }
 
   .ll-title {
@@ -338,66 +352,68 @@
   }
 
   .ll-project {
-        /*background: url(../images/cover-LL-project.png) no-repeat bottom center;*/
-        background: url(../images/proof-02.png) no-repeat bottom center;
-        -webkit-background-size: contain;
-        -moz-background-size: contain;
-        -o-background-size: contain;
-        background-size: contain;
-    }
+      background: url(../images/proof-02.png) no-repeat bottom center;
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain;
+  }
 
-    .ll-bg-top {
-        background-image: url(../images/cover-LL-pattern.png);
-        background-repeat: repeat-x;
-        -webkit-background-size: contain;
-        -moz-background-size: contain;
-        -o-background-size: contain;
-        background-size: contain;
-        min-height: 40px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        opacity: 0.1;
-        z-index: -1;
-    }
+  .ll-bg-top {
+      background-image: url(../images/cover-LL-pattern.png);
+      background-repeat: repeat-x;
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain;
+      min-height: 40px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      opacity: 0.1;
+      z-index: -1;
+  }
 
-    .ll-bg-bottom {
-        background-image: url(../images/cover-LL-pattern.png);
-        background-repeat: repeat-x;
-        background-size: contain;
-        min-height: 40px;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 100%;
-        opacity: 0.1;
-        z-index: -1;
-    }
+  .ll-bg-bottom {
+      background-image: url(../images/cover-LL-pattern.png);
+      background-repeat: repeat-x;
+      background-size: contain;
+      min-height: 40px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      opacity: 0.1;
+      /*z-index: -1;*/
+  }
 
-    .as-bg {
-      background: #d5ff83; /* Old browsers */
-      background: -moz-linear-gradient(top right, #d5ff83 0%, #ffc56d 100%); /* FF3.6-15 */
-      background: -webkit-linear-gradient(top right, #d5ff83 0%, #ffc56d 100%); /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(top right, #d5ff83 0%, #ffc56d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5ff83', endColorstr='#ffc56d', GradientType=1); /* IE6-9 fallback on horizontal gradient */
-
+  .as-bg {
+      background: #d5ff83;
+      /* Old browsers */
+      background: -moz-linear-gradient(top right, #d5ff83 0%, #ffc56d 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top right, #d5ff83 0%, #ffc56d 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(top right, #d5ff83 0%, #ffc56d 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5ff83', endColorstr='#ffc56d', GradientType=1);
+      /* IE6-9 fallback on horizontal gradient */
       position: relative;
-      z-index: -3;
-    }
+      /*z-index: -3;*/
+  }
 
-    .as-pattern {
-        background: url(../images/cover-as-bg.png) repeat repeat;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        bottom: 0;
-        right: 0;
-        padding: 0;
-        opacity: 0.4;
-        z-index: -2;
-    }
-
+  .as-pattern {
+      background: url(../images/cover-as-bg.png) repeat repeat;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      bottom: 0;
+      right: 0;
+      padding: 0;
+      opacity: 0.4;
+      /*z-index: -2;*/
+  }
   /* stories
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -421,7 +437,6 @@
   #nadir-img {
       margin: 0;
   }
-
   /*.story-as-p {
       color: white !important;
   }*/
@@ -443,7 +458,57 @@
       z-index: -100;
   }
 
-  /* footer
+/* footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+section {
+    position: relative;
+
+    /* Using border-box sizing, to ensure the box */
+    -webkit-box-sizing: border-box;
+    /* Modern browsers.*/
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 100vh;
+    content: 'viewport-units-buggyfill;' 'width: 100vh;' 'height: 100vh;';
+    /* IE9 and 10 */
+
+    z-index: 0;
+}
+
+footer {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+
+    margin: 0 auto;
+    /* Using border-box sizing, to ensure the box */
+    -webkit-box-sizing: border-box;
+    /* Modern browsers.*/
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100vh;
+    content: 'viewport-units-buggyfill;' 'width: 100vh;' 'height: 100vh;';
+    /* IE9 and 10 */
+
+    /*background: #7dc6ff;*/
+    bottom:0;
+    left: 0px;
+    z-index: -1;
+}
+
+/* scroll reveal
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.sr .demo .block {
+  visibility: hidden;
+}
+
+.sr .fooReveal {
+  visibility: hidden;
+}
+
+/* to delete
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
   .footer-next-project {
@@ -451,10 +516,9 @@
       max-height: 400px;
   }
 
-
-    .no-padding {
-        padding: 0px;
-    }
+  .no-padding {
+      padding: 0px;
+  }
 
   .footer-as-title {
       background: url(../images/footer-proof-1.png) no-repeat bottom left;
@@ -490,12 +554,12 @@
           background-position: center;
       }
       .footer-as-project {
-        opacity: 0.1;
-        background-position: bottom center;
+          opacity: 0.1;
+          background-position: bottom center;
       }
       a:hover>div .footer-as-project {
-        opacity: 0.1;
-        }
+          opacity: 0.1;
+      }
   }
 
   .footer-distributed {
