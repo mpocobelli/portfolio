@@ -393,7 +393,11 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
   .cover {
-      height: 350px;
+      height: 410px;
+  }
+
+  .title-container {
+    margin-top:-130px
   }
 
   .ll-cover-image {
@@ -413,34 +417,6 @@
       /*z-index: -3;*/
   }
 
-  .ll-pattern {
-      background: url(../images/LL-bg-pattern-5.png) repeat repeat;
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      bottom: 0;
-      right: 0;
-      padding: 0;
-      opacity: 0.06;
-      /*z-index: -2;*/
-  }
-
-  .ll-title {
-      background: url(../images/proof-01.png) no-repeat center center;
-      -webkit-background-size: contain;
-      -moz-background-size: contain;
-      -o-background-size: contain;
-      background-size: contain;
-  }
-
-  .ll-project {
-      background: url(../images/proof-02.png) no-repeat bottom center;
-      -webkit-background-size: contain;
-      -moz-background-size: contain;
-      -o-background-size: contain;
-      background-size: contain;
-  }
-
   .ll-bg-top {
       background-image: url(../images/cover-LL-pattern.png);
       background-repeat: repeat-x;
@@ -455,19 +431,6 @@
       width: 100%;
       opacity: 0.1;
       z-index: -1;
-  }
-
-  .ll-bg-bottom {
-      background-image: url(../images/cover-LL-pattern.png);
-      background-repeat: repeat-x;
-      background-size: contain;
-      min-height: 40px;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 100%;
-      opacity: 0.1;
-      /*z-index: -1;*/
   }
 
   .as-bg {
@@ -501,8 +464,11 @@
     .cover {
         height: 488px;
     }
+    .title-container {
+      margin-top:-165px
+    }
   }
-  
+
   /* stories
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
