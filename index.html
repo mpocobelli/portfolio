@@ -8,226 +8,386 @@
 
 <head>
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Mauro Pocobelli | Graphic Desing Portfolio</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Hello! I'm Mauro Pocobelli. Italian graphic designer focused on branding and digital project, based in Cork." />
-	<meta name="keywords" content="Mauro Pocobelli, graphic design, freelance, branding, editorial, typography, digital project" />
-	<meta name="author" content="Mauro Pocobelli" />
+    <!-- Descriptions -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mauro Pocobelli | Liber Liber</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hello! I'm Mauro Pocobelli. Italian graphic designer focused on branding and digital project, based in Cork." />
+    <meta name="keywords" content="Mauro Pocobelli, graphic design, freelance, branding, editorial, typography, digital project" />
+    <meta name="author" content="Mauro Pocobelli" />
 
-	<!-- Facebook integration -->
-	<meta property="og:title" content="Mauro Pocobelli | Stories" />
-	<meta property="og:image" content="http://www.mauropocobelli.com/images/thumbnails.png" />
-	<meta property="og:url" content="http://www.mauropocobelli.com" />
-	<meta property="og:site_name" content="Mauro Pocobelli Portfolio" />
-	<meta property="og:description" content="Graphic Design Portfolio" />
-	<meta property="og:type" content="Portfolio" />
+    <!-- Facebook integration -->
+    <meta property="og:title" content="Mauro Pocobelli | Liber Liber" />
+    <meta property="og:image" content="http://www.mauropocobelli.com/images/thumbnails-ll.png" />
+    <meta property="og:url" content="http://www.mauropocobelli.com/liberliber.html" />
+    <meta property="og:site_name" content="Mauro Pocobelli Portfolio" />
+    <meta property="og:description" content="Graphic Design Portfolio" />
+    <meta property="og:type" content="Portfolio" />
 
-	<!-- Twitter integration -->
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="@mauropocobelli">
-	<meta name="twitter:creator" content="@mauropocobelli">
-	<meta name="twitter:title" content="Mauro Pocobelli | Stories" />
-	<meta name="twitter:description" content="Hello! I'm Mauro Pocobelli. Italian graphic designer focused on branding and digital project, based in Cork.">
-	<meta name="twitter:url" content="http://www.mauropocobelli.com" />
-	<meta name="twitter:image" content="http://www.mauropocobelli.com/images/thumbnails.png" />
+    <!-- Twitter integration -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@mauropocobelli">
+    <meta name="twitter:creator" content="@mauropocobelli">
+    <meta name="twitter:title" content="Mauro Pocobelli | Liber Liber" />
+    <meta property="og:description" content="The restyling of Liber Liber, the Italian Digital Ammanuensis World" />
+    <meta name="twitter:url" content="http://www.mauropocobelli.com/nadir.html" />
+    <meta name="twitter:image" content="http://www.mauropocobelli.com/images/thumbnails-ll.png" />
 
-	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Raleway:600,700,800" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700" rel="stylesheet">
+    <!-- Fonts and footer icons-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,600,800" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/loader-blue.css">
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- gallery -->
+    <link rel="stylesheet" href="css/justifiedGallery.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/swipebox.min.css" />
+    <!-- smooth-scroll -->
+    <script src="js/smooth-scroll.js"></script>
+    <!-- ScrollReveal -->
+    <script src="js/scrollreveal.min.js"></script>
 
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<!-- jquery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+    <script>
+        (function() {
 
-	<!-- home scrolling -->
-	<link rel='stylesheet prefetch' href='css/jquery.fullPage.css'>
+            var config = {
+                viewFactor: 0.0001,
+                duration: 1000,
+                distance: "10px",
+                scale: 0.999
+            };
+
+            window.sr = ScrollReveal(config);
+
+            if (sr.isSupported()) {
+                document.documentElement.classList.add('sr');
+            }
+        })();
+    </script>
 
 </head>
 
 <body>
 
-	<header>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="position:absolute;">
 
-		<nav class="gtco-nav" role="navigation">
-			<div class="gtco-container">
-				<div class="row">
-					<div class="col-sm-2 col-xs-12"></div>
-					<div class="col-xs-10 text-right menu-1 main-nav">
-						<ul>
-							<li class="logo">Mauro Pocobelli</li>
-							<hr>
-							<li><a class="active" href="index.html" data-nav-section="home">Stories</a></li>
-							<li><a href="about.html" data-nav-section="about">About</a></li>
-							<li><a href="archive.html" data-nav-section="archive">Archive</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
 
-	</header>
+                    <a class="navbar-brand navbar-brand-2" href="#top">Mauro Pocobelli</a>
 
-	<main>
+                    <div class="collapse navbar-collapse" style="color:white">
+                        <ul class="nav navbar-nav navbar-nav-2 navbar-right">
+                            <li data-toggle="collapse"><a href="#top">Stories</a></li>
+                            <li data-toggle="collapse"><a href="#top">About</a></li>
+                            <li data-toggle="collapse"><a href="#top">Archive</a></li>
+                        </ul>
+                    </div>
 
-		<div id="fullpage">
+                </div>
+            </div>
+        </div>
 
-			<section class="vertical-scrolling">
-				<div class="container-fluid mauro-cover mauro-cover-LL-bg" id="gradient">
-					<div class="container-fluid" id="mauro-cover-mm-bg-all"></div>
-					<div class="container-fluid mauro-cover-container-2 mauro-cover-mm-title"></div>
-					<div class="container-fluid mauro-cover-container-3 mauro-cover-mm-project"><h3 class="cover-scroll">scroll down</h3></div></div>
-			</section>
+    </nav>
 
-			<section class="vertical-scrolling">
-				<a href="stories/liberliber.html">
-					<div class="container-fluid mauro-cover mauro-cover-LL-bg">
-						<div class="container-fluid mauro-cover-container mauro-cover-LL-title"></div>
-						<div class="container-fluid mauro-cover-container mauro-cover-LL-project"></div>
-						<div class="container-fluid mauro-cover-LL-bg-all"></div>
-						<div class="container-fluid mauro-cover-LL-bg-bottom"></div>
-					</div>
-				</a>
-			</section>
+    <section class="demo">
 
-			<section class="vertical-scrolling">
-				<a href="stories/nadir.html">
-					<div class="container-fluid mauro-cover mauro-cover-nadir-bg">
-						<div class="container-fluid mauro-cover-container mauro-cover-nadir-title"></div>
-						<div class="container-fluid mauro-cover-container mauro-cover-nadir-project"></div>
-						<div class="container-fluid mauro-cover-nadir-bg-all"></div>
-					</div>
-				</a>
-			</section>
+        <header>
 
-			<section class="vertical-scrolling">
-				<a href="stories/astribute.html">
-					<div class="container-fluid mauro-cover mauro-cover-as-bg">
-						<div class="container-fluid mauro-cover-container mauro-cover-as-title"></div>
-						<div class="container-fluid mauro-cover-container mauro-cover-as-project"></div>
-						<div class="container-fluid mauro-cover-as-bg-all"></div>
-					</div>
-				</a>
-			</section>
+            <div class="container-fluid">
+                <div class="row">
 
-			<section class="vertical-scrolling">
-				<a href="stories/coloe.html">
-					<div class="container-fluid mauro-cover mauro-cover-coloe-bg">
-						<div class="container-fluid mauro-cover-coloe-bg-all"></div>
-						<div class="container-fluid mauro-cover-container mauro-cover-coloe-title"></div>
-						<div class="container-fluid mauro-cover-container mauro-cover-coloe-project"></div>
-					</div>
-				</a>
-			</section>
+                    <div class="col-xs-12 block">
+                        <div class="block cover-home" style="z-index:-1; height:90vh">
+                            <h2 style="text-align:center; padding-top:40vh;">Hello, enjoy my graphic portfolio!</h2>
+                        </div>
+                    </div>
 
-	</main>
+                </div>
+            </div>
 
-	<footer>
+        </header>
 
-		<!-- jQuery -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="js/jquery.min.js"></script>
-		<!-- jQuery Easing -->
-		<script src="js/jquery.easing.1.3.js"></script>
-		<!-- Bootstrap -->
-		<script src="js/bootstrap.min.js"></script>
-		<!-- Waypoints -->
-		<script src="js/jquery.waypoints.min.js"></script>
-		<!-- MAIN JS -->
-		<script src="js/main.js"></script>
+        <main>
 
-		<!-- vh fixing-->
-		<script src="js/viewport-units-buggyfill.js"></script>
-		<script src="js/viewport-units-buggyfill.hacks.js"></script>
-		<script>
-			window.viewportUnitsBuggyfill.init({
-				refreshDebounceWait: 50,
-				hacks: window.viewportUnitsBuggyfillHacks
-			});
-		</script>
+            <div class="container content-wrap content-home">
+                <div class="row">
 
-		<!-- home scrolling -->
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js'></script>
-		<script src="js/home.js"></script>
+                    <div class="col-xs-12 block">
+                        <div class="LiberLiber-home" style="position:relative">
+                            <a href="#" class="">
 
-		<!-- new menu -->
-		<script src="js/menu.js"></script>
+                                <div class="home-text">
+                                    <h1 style="color:white;">LiberLiber</h1>
+                                    <p style="color:white; ">The Italian Digital Amanuensis Library</p>
 
-		<!-- first cover gradient animation -->
-		<script type="text/javascript">
-			var colors = new Array(
-				[0, 165, 165], [25, 50, 127], [35, 78, 121], [213, 255, 131], [255, 197, 109], [253, 92, 61], [235, 85, 98]);
+                                </div>
+                                <div class="home-img">
+                                    <img src="images/LiberLiber-01.png" alt="" width="" height="" class="img-responsive ">
+                                </div>
 
-			var step = 0;
-			//color table indices for:
-			// current color left
-			// next color left
-			// current color right
-			// next color right
-			var colorIndices = [0, 1, 2, 3];
+                            </a>
+                        </div>
+                    </div>
 
-			//transition speed
-			var gradientSpeed = 0.003;
+                    <div class="col-xs-6 block">
+                        <div class="Nadir-home" style="position:relative">
+                            <a href="#" class="">
 
-			function updateGradient() {
+                                <div class="home-text">
+                                    <h1 style="color:#242A37;">Nadir</h1>
+                                    <p style="color:#242A37; ">The Atlas of News</p>
 
-				if ($ === undefined) return;
+                                </div>
+                                <div class="home-img">
+                                    <img src="images/Nadir-home.png" alt="" width="" height="" class="img-responsive ">
+                                </div>
 
-				var c0_0 = colors[colorIndices[0]];
-				var c0_1 = colors[colorIndices[1]];
-				var c1_0 = colors[colorIndices[2]];
-				var c1_1 = colors[colorIndices[3]];
+                            </a>
+                        </div>
+                    </div>
 
-				var istep = 1 - step;
-				var r1 = Math.round(istep * c0_0[0] + step * c0_1[0]);
-				var g1 = Math.round(istep * c0_0[1] + step * c0_1[1]);
-				var b1 = Math.round(istep * c0_0[2] + step * c0_1[2]);
-				var color1 = "rgb(" + r1 + "," + g1 + "," + b1 + ")";
+                    <div class="col-xs-6 block">
+                        <div class="as-home" style="position:relative">
 
-				var r2 = Math.round(istep * c1_0[0] + step * c1_1[0]);
-				var g2 = Math.round(istep * c1_0[1] + step * c1_1[1]);
-				var b2 = Math.round(istep * c1_0[2] + step * c1_1[2]);
-				var color2 = "rgb(" + r2 + "," + g2 + "," + b2 + ")";
+                            <a href="#" class="">
 
-				$('#gradient').css({
-					background: "-webkit-gradient(linear, center top, center bottom, from(" + color1 + "), to(" + color2 + "))"
-				}).css({
-					background: "-moz-linear-gradient(top, " + color1 + " 0%, " + color2 + " 100%)"
-				});
 
-				step += gradientSpeed;
-				if (step >= 1) {
-					step %= 1;
-					colorIndices[0] = colorIndices[1];
-					colorIndices[2] = colorIndices[3];
+                                <div class="home-text">
+                                    <h1 style="color:#242A37;">AS Tribute</h1>
+                                    <p style="color:#242A37; ">History for new and old generations</p>
 
-					//pick two new target color indices
-					//do not pick the same as the current one
-					colorIndices[1] = (colorIndices[1] + Math.floor(1 + Math.random() * (colors.length - 1))) % colors.length;
-					colorIndices[3] = (colorIndices[3] + Math.floor(1 + Math.random() * (colors.length - 1))) % colors.length;
+                                </div>
+                                <div class="home-img">
+                                    <img src="images/as-home.png" alt="" width="" height="" class="img-responsive ">
+                                </div>
 
-				}
-			}
+                            </a>
 
-			setInterval(updateGradient, 10);
-		</script>
+                        </div>
+                    </div>
 
-		<!-- new menu -->
-		<script src="js/menu.js"></script>
+                    <div class="col-xs-6 block">
+                        <div class="coloe-home" style="position:relative">
 
-	</footer>
+                            <a href="#" class="">
+
+
+                                <div class="home-text">
+                                    <h1 style="color:#fff;">Coloe</h1>
+                                    <p style="color:#fff;">The Coloured Bus Shelter</p>
+
+                                </div>
+                                <div class="home-img">
+                                    <img src="images/coloe-home.png" alt="" width="" height="" class="img-responsive ">
+                                </div>
+
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 block">
+                        <div class="archive-home" style="position:relative">
+
+                            <a href="#" class="">
+
+
+                                <div class="home-text">
+                                    <h1 style="color:#242A37;">Archive</h1>
+                                    <p style="color:#242A37; ">A selection of my works</p>
+
+                                </div>
+                                <div class="home-img">
+                                    <img src="images/archive-home.png" alt="" width="" height="" class="img-responsive ">
+                                </div>
+
+                            </a>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </main>
+
+    </section>
+
+    <!-- menu -->
+    <div class="button_container button_container-2" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+    </div>
+
+    <div class="overlay overlay-2" id="overlay">
+
+        <nav class="overlay-menu">
+            <ul>
+                <li><a href="#">Stories</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Archive</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+
+    <div class="footer-project">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 block">
+
+                    <h2 style="padding-bottom:36px">Nice to meet you!</h2>
+                    <p style="padding-bottom:24px">Itlian graphic designer and freelancer based in Cork graduated at Politecnico di Milano and IUAV University of Venice with honors in 2015. My research is manly focused on branding and digital project. The goal of my last projects like
+                        <a href="stories/LiberLiber.html" target="_blank"> Nadir </a> and <a href="stories/LiberLiber.html" target="_blank"> LiberLiber</a> Liber Liber is to define the brand’s soul and connect people to it through interactive environments
+                        or digital products mixing UX and UI desing. On this website I share my best works, happy surfing!
+                    </p>
+                    <a href="images/mauropocobelli_CV.pdf" target="_blank"> Download my CV</a> |
+                    <a href="mailto:hello@mauropocobelli.com" target="_blank">Contact me</a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+
+
+        <div class="ll-bg-bottom"></div>
+
+        <div class="container">
+            <div class="row footer-1">
+
+                <div class="col-lg-5 col-sm-4">
+                    <a class="menu-logo" style="color:white" href="#">Mauro Pocobelli</a>
+                </div>
+
+                <div class="col-lg-5 col-sm-5 col-xs-10 menu-footer">
+                    <a href="#">Stories</a>
+                    <a href="#">About</a>
+                    <a href="#">Archive</a>
+                </div>
+
+                <div class="col-lg-2 col-sm-2 col-xs-2 menu-footer-fa">
+                    <a href="#"><i class="fa fa-footer fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-footer fa-instagram"></i></a>
+                </div>
+
+            </div>
+        </div>
+
+        <div style="width:100%; height:1px; background-color:white; opacity:0.1;"></div>
+
+
+        <div class="container">
+            <div class="row footer-2">
+                <div class="col-lg-10 col-lg-offset-1">
+
+                    <ul class=" info">
+                        <li>Get free this portfolio template on <a href="#">Github </a> <span class="info-span"> | </span></li>
+                        <li>mail: <a href="#">hello@mauropocobelli.com </a> <span class="info-span"> | </span> </li>
+                        <li>whatapp: <a href="#">+39 392 8070458</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
+        <!-- jQuery Easing -->
+        <script src="js/jquery.easing.1.3.js"></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Waypoints -->
+        <script src="js/jquery.waypoints.min.js"></script>
+        <!-- loader -->
+        <script src="js/pace.min.js"></script>
+
+
+        <!-- menu -->
+        <script src="js/fullscreen-menu.js"></script>
+
+        <!-- ScrollReveals -->
+        <script>
+            var hero = {
+                origin: "top",
+                distance: "24px",
+                duration: 1500,
+                scale: 1.05
+            };
+
+            var intro = {
+                origin: "bottom",
+                distance: "64px",
+                duration: 900,
+                delay: 1500,
+                scale: 1
+            };
+
+            var github = {
+                origin: "top",
+                distance: "32px",
+                duration: 600,
+                delay: 1800,
+                scale: 0
+            };
+
+            sr.reveal(".demo .block", {
+                // reset: true,
+                viewOffset: {
+                    top: 30
+                }
+            });
+            sr.reveal(".hero", hero);
+            sr.reveal(".intro", intro);
+            sr.reveal(".hero .github", github);
+            sr.reveal(".seq-1", 100);
+
+            function addCommasToNum(num) {
+                return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            }
+        </script>
+
+        <!-- SmoothScroll -->
+        <script>
+            smoothScroll.init({
+                speed: 1200, // Integer. How fast to complete the scroll in milliseconds
+                easing: 'easeInOutCubic', // Easing pattern to use
+                offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+            });
+        </script>
+
+        <script>
+            if (window.location.hash) {
+                var anchor = document.querySelector(window.location.hash); // Get the anchor
+                var toggle = document.querySelector('a[href*="' + window.location.hash + '" ]'); // Get the toggle (if one exists)
+                var options = {}; // Any custom options you want to use would go here
+                smoothScroll.animateScroll(anchor, toggle, options);
+            }
+        </script>
+
+    </footer>
 
 </body>
 
