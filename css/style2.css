@@ -85,7 +85,7 @@ a:hover, a:focus {
 @media
 /*mobile*/
 
-(min-width: 600px) {
+(min-width: 768px) {
     p, q, a {
         font-size: 18px;
         line-height: 38px;
