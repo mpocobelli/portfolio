@@ -685,11 +685,12 @@ a:hover, a:focus {
     transform: rotate(-135deg);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .footer-project-prev {
-        display: none;
+      display: none;
     }
 }
+
 
 @media (max-width: 600px) {
     .footer-project-title {
