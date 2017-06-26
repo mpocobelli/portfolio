@@ -365,7 +365,15 @@ a:hover, a:focus {
 
 /* homepage
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.cover-home {
+  z-index:-1;
+  height: 500px;
+}
 
+.cover-home-title {
+    text-align:center;
+    padding-top:230px;
+}
 .content-home a {
     opacity: 1 !important;
     -moz-transition: none;
@@ -455,6 +463,14 @@ a:hover, a:focus {
     }
 }
 
+@media (min-width: 600px) {
+    .cover-home {
+        height: 700px;
+    }
+    .cover-home-title {
+        padding-top:310px;
+    }
+}
 
 /* covers
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
