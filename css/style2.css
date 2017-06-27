@@ -82,10 +82,8 @@ a:hover, a:focus {
     margin-bottom: 60px;
 }
 
-@media
 /*mobile*/
-
-(min-width: 768px) {
+@media (min-width: 768px) {
     p, q, a {
         font-size: 18px;
         line-height: 38px;
@@ -111,7 +109,6 @@ a:hover, a:focus {
 
 @media
 /*tablet*/
-
 (min-width: 1100px) {
     h2 {
         font-size: 64px;
@@ -121,7 +118,6 @@ a:hover, a:focus {
 
 @media
 /*desktop*/
-
 (min-width: 970px) {
     q {
         font-size: 24px;
@@ -274,6 +270,11 @@ a:hover, a:focus {
     background: #0090ff;
 }
 
+.overlay-as{
+  background: #d5ff83 !important;
+}
+
+
 .overlay.open {
     opacity: 0.98;
     visibility: visible;
@@ -332,12 +333,12 @@ a:hover, a:focus {
 .overlay ul li a {
     display: block;
     position: relative;
-    color: #fff;
+    color: #242A37;
     overflow: hidden;
 }
 
-.overlay-dark ul li a {
-    color: #242A37 !important;
+.overlay-LiberLiber ul li a {
+    color: #fff !important;
 }
 
 @-webkit-keyframes fadeInRight {
@@ -412,7 +413,7 @@ a:hover, a:focus {
     display: block;
 }
 
-.LiberLiber-home {
+.ll-cover-color, .LiberLiber-home {
     background: #45d1ff;
     background: -moz-linear-gradient(top right, #45d1ff 0%, #0090ff 100%);
     background: -webkit-linear-gradient(top right, #45d1ff 0%, #0090ff 100%);
@@ -428,7 +429,7 @@ a:hover, a:focus {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00E6F5', endColorstr='#49CDD6', GradientType=1);
 }
 
-.as-home {
+.as-cover-color, .as-home {
   background: #d5ff83;
   background: -moz-linear-gradient(top right, #d5ff83 0%, #ffc56d 100%);
   background: -webkit-linear-gradient(top right, #d5ff83 0%, #ffc56d 100%);
@@ -474,40 +475,36 @@ a:hover, a:focus {
 
 /* covers
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .as-pattern {
-      background: url(../images/cover-as-bg.png) repeat repeat;
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      bottom: 0;
-      right: 0;
-      padding: 0;
-      opacity: 0.4;
-      /*z-index: -2;*/
-  }
+
 .cover {
     height: 410px;
+    position: relative;
 }
 
 .title-container {
     margin-top: -100px
 }
 
-.ll-cover-image {
-    background: url(../images/LiberLiber-cover.png) no-repeat bottom center;
+.cover-image {
     height: 100%;
     opacity: 0.02;
-    /*border-style: solid;*/
 }
 
-.ll-cover-color {
+.ll-cover-image {
+  background: url(../images/LiberLiber-cover.png) no-repeat bottom center;
+}
+
+.as-cover-image {
+  background: url(../images/As-Tribute/as-cover.png) no-repeat center center;
+}
+
+/*.ll-cover-color {
     background: #45d1ff;
     background: -moz-linear-gradient(top right, #45d1ff 0%, #0090ff 100%);
     background: -webkit-linear-gradient(top right, #45d1ff 0%, #0090ff 100%);
     background: linear-gradient(top right, #45d1ff 0%, #0090ff 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45d1ff', endColorstr='#0090ff', GradientType=1);
-    position: relative;
-}
+}*/
 
 .ll-bg-top {
     background-image: url(../images/cover-LL-pattern.png);
