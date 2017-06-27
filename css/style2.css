@@ -89,7 +89,7 @@ a:hover, a:focus {
         line-height: 38px;
     }
     .content-wrap {
-        margin-bottom: 150px;
+        margin-bottom: 100px;
     }
     h2 {
         font-size: 45px;
@@ -122,6 +122,10 @@ a:hover, a:focus {
     q {
         font-size: 24px;
         line-height: 36px;
+    }
+
+    .content-wrap {
+        margin-bottom: 140px;
     }
 }
 
@@ -266,6 +270,10 @@ a:hover, a:focus {
     z-index: 10;
 }
 
+.overlay-Archive {
+    background: #242A37;
+}
+
 .overlay-LiberLiber {
     background: #0090ff;
 }
@@ -337,7 +345,7 @@ a:hover, a:focus {
     overflow: hidden;
 }
 
-.overlay-LiberLiber ul li a {
+.overlay-LiberLiber ul li a, .overlay-Archive ul li a {
     color: #fff !important;
 }
 
@@ -362,7 +370,6 @@ a:hover, a:focus {
         left: 0;
     }
 }
-
 
 /* homepage
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -448,7 +455,7 @@ a:hover, a:focus {
 }
 
 .archive-home {
-  background-color: rgba(132, 137, 149, 0.1);
+  background-color: #242A37;
 }
 
 
@@ -620,6 +627,10 @@ a:hover, a:focus {
     opacity: 1;
 }
 
+.footer-project .footer-LiberLiber a:hover {
+    color: #0090ff !important;
+    opacity: 1;
+}
 .footer-project-title {
     font-size: 64px;
     font-weight: 100;
@@ -708,7 +719,7 @@ a:hover, a:focus {
     }
 }
 
-footer {
+footer, .archive {
     background-color: #242A37;
     /*padding: 20px 20px 20px 30px;*/
 }
