@@ -506,9 +506,12 @@ a:hover, a:focus {
 }
 
 .ll-cover-image {
-  background: url(../images/LiberLiber-cover.png) no-repeat bottom center;
+  background: url(../images/liberliber-cover.png) no-repeat bottom center;
 }
 
+.nadir-cover-image {
+  background: url(../images/nadir-cover.png) no-repeat center center;
+}
 .as-cover-image {
   background: url(../images/As-Tribute/as-cover.png) no-repeat center center;
 }
@@ -525,7 +528,7 @@ a:hover, a:focus {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45d1ff', endColorstr='#0090ff', GradientType=1);
 }*/
 
-.ll-bg-top {
+/*.ll-bg-top {
     background-image: url(../images/cover-LL-pattern.png);
     background-repeat: repeat-x;
     -webkit-background-size: contain;
@@ -539,18 +542,18 @@ a:hover, a:focus {
     width: 100%;
     opacity: 0.1;
     z-index: -1;
-}
+}*/
 
-.as-bg {
+/*.as-bg {
     background: #d5ff83;
     background: -moz-linear-gradient(top right, #d5ff83 0%, #ffc56d 100%);
     background: -webkit-linear-gradient(top right, #d5ff83 0%, #ffc56d 100%);
     background: linear-gradient(top right, #d5ff83 0%, #ffc56d 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5ff83', endColorstr='#ffc56d', GradientType=1);
     position: relative;
-}
+}*/
 
-.as-pattern {
+/*.as-pattern {
     background: url(../images/cover-as-bg.png) repeat repeat;
     position: absolute;
     height: 100%;
@@ -559,8 +562,8 @@ a:hover, a:focus {
     right: 0;
     padding: 0;
     opacity: 0.4;
-    /*z-index: -2;*/
-}
+    z-index: -2;
+}*/
 
 @media (min-width: 600px) {
     .cover {
@@ -592,11 +595,9 @@ a:hover, a:focus {
     padding-bottom: 80px;
 }
 
-.story-nadir {
+/*.story-nadir {
     background-color: #f3f5f6;
-}
-
-
+}*/
 
 /* footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
