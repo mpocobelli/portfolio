@@ -282,6 +282,14 @@ a:hover, a:focus {
   background: #d5ff83 !important;
 }
 
+.overlay-Coloe{
+  background: #FF606E !important;
+}
+
+.overlay-nadir{
+  background: #00E6F5 !important;
+}
+
 
 .overlay.open {
     opacity: 0.98;
@@ -345,7 +353,7 @@ a:hover, a:focus {
     overflow: hidden;
 }
 
-.overlay-LiberLiber ul li a, .overlay-Archive ul li a {
+.overlay-LiberLiber ul li a, .overlay-Archive ul li a, .overlay-Coloe ul li a {
     color: #fff !important;
 }
 
@@ -428,7 +436,7 @@ a:hover, a:focus {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45d1ff', endColorstr='#0090ff', GradientType=1);
 }
 
-.Nadir-home {
+.nadir-cover-color , .Nadir-home {
     background: #00E6F5;
     background: -moz-linear-gradient(top right, #00E6F5 0%, #49CDD6 100%);
   background: -webkit-linear-gradient(top right, #00E6F5 0%, #49CDD6 100%);
@@ -445,8 +453,8 @@ a:hover, a:focus {
   position: relative;
 }
 
-.coloe-home {
-  background: #EB633D;
+.coloe-cover-color , .coloe-home {
+  background: #FF606E;
   background: -moz-linear-gradient(top right, #EB633D 0%, #FF606E 100%);
   background: -webkit-linear-gradient(top right, #EB633D 0%, #FF606E 100%);
   background: linear-gradient(top right, #EB633D 0%, #FF606E 100%);
@@ -503,6 +511,10 @@ a:hover, a:focus {
 
 .as-cover-image {
   background: url(../images/As-Tribute/as-cover.png) no-repeat center center;
+}
+
+.coloe-cover-image {
+  background: url(../images/coloe-cover.png) no-repeat bottom center;
 }
 
 /*.ll-cover-color {
@@ -562,44 +574,28 @@ a:hover, a:focus {
 
 /* stories
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.coloe {
+  background: #fbefe2;
+}
+
+.coloe p{
+  color: #242A37;
+  opacity: 0.7;
+
+}
+.coloe img{
+  padding-top: 15px;
+}
 
 .quote {
     padding-top: 80px;
     padding-bottom: 80px;
 }
 
-#ll-link {
-    color: #00aeef;
-}
-
 .story-nadir {
     background-color: #f3f5f6;
 }
 
-#nadir-links {
-    color: #279fa7;
-}
-
-#nadir-img {
-    margin: 0;
-}
-
-.story-as {
-    color: white !important;
-    background-color: #000;
-    z-index: -100;
-    color: white;
-}
-
-#as-img {
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.story-coloe {
-    background-color: #fbefe2;
-    z-index: -100;
-}
 
 
 /* footer
@@ -631,6 +627,17 @@ a:hover, a:focus {
     color: #0090ff !important;
     opacity: 1;
 }
+
+.footer-project .footer-as a:hover {
+    color: #ffc56d !important;
+    opacity: 1;
+}
+
+/*.footer-project .footer-archive a:hover {
+    color: #242A37 !important;
+    opacity: 0.7 !important;
+}*/
+
 .footer-project-title {
     font-size: 64px;
     font-weight: 100;
