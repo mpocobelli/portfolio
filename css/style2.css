@@ -438,10 +438,10 @@ a:hover, a:focus {
 
 .nadir-cover-color , .Nadir-home {
     background: #00E6F5;
-    background: -moz-linear-gradient(top right, #00E6F5 0%, #49CDD6 100%);
-  background: -webkit-linear-gradient(top right, #00E6F5 0%, #49CDD6 100%);
-  background: linear-gradient(top right, #00E6F5 0%, #49CDD6 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00E6F5', endColorstr='#49CDD6', GradientType=1);
+    background: -moz-linear-gradient(top right, #49CDD6 0%, #00E6F5 100%);
+  background: -webkit-linear-gradient(top right, #49CDD6 0%, #00E6F5 100%);
+  background: linear-gradient(top right, #49CDD6 0%, #00E6F5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00E6F5', endColorstr='#4FB5BA', GradientType=1);
 }
 
 .as-cover-color, .as-home {
@@ -620,7 +620,7 @@ a:hover, a:focus {
 }
 
 .footer-project .footer-nadir a:hover {
-    color: #49CDD6 !important;
+    color: #4FB5BA !important;
     opacity: 1;
 }
 
