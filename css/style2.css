@@ -130,15 +130,39 @@ a:hover, a:focus {
 }
 
 /*big smarthphone*/
-
+/* iPhone 6 Plus landscape */
 @media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 3)
+  {
+    p, q, a {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  }
+
+
+/* iPhone 6 Plus portrait */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 3)
+  {
+    p, q, a {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  }
+
+
+/*@media only screen
 and (min-device-width : 414px)
 and (max-device-width : 736px)
 and (orientation : landscape) {
-  p, q, a {
-  font-size: 16px;
-  line-height: 27px;
-}
+
 }
 
 @media only screen
@@ -149,7 +173,7 @@ and (orientation : portrait) {
   font-size: 16px;
   line-height: 27px;
 }
-}
+}*/
 
 
 /* menu
