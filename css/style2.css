@@ -152,6 +152,12 @@ a:hover, a:focus {
   }
 }
 
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+  p, q, a {
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
 
 /* 1.5 dpr */
 
