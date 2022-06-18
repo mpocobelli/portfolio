@@ -11,17 +11,16 @@
   <!-- Descriptions -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Mauro Pocobelli | Stories</title>
+  <title>Mauro Pocobelli</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Hello! I'm Mauro Pocobelli. Italian graphic designer focused on branding and digital project" />
-  <meta name="keywords" content="Mauro Pocobelli, graphic design, freelance, branding, editorial, digital project" />
+  <meta name="description" content="Hello! I'm Mauro Pocobelli, Italian UI/UX designer" />
+  <meta name="keywords" content="Mauro Pocobelli, UX/UI design, graphic design, freelance, branding, editorial, digital project" />
   <meta name="author" content="Mauro Pocobelli" />
   <link rel="shortcut icon" href="images/favicon.ico">
 
-
   <!-- Facebook integration -->
-  <meta property="og:title" content="Mauro Pocobelli | Stories" />
-  <meta property="og:image" content="http://www.mauropocobelli.com/images/thumbnails.png" />
+  <meta property="og:title" content="Mauro Pocobelli" />
+  <meta property="og:image" content="http://www.mauropocobelli.com/images/hp/thumbnails.png" />
   <meta property="og:url" content="http://www.mauropocobelli.com/index.html" />
   <meta property="og:site_name" content="Mauro Pocobelli Portfolio" />
   <meta property="og:description" content="Graphic Design Portfolio" />
@@ -31,362 +30,387 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@mauropocobelli">
   <meta name="twitter:creator" content="@mauropocobelli">
-  <meta name="twitter:title" content="Mauro Pocobelli | Stories" />
+  <meta name="twitter:title" content="Mauro Pocobelli" />
   <meta property="og:description" content="Mauro Pocobelli, Design Portfolio" />
   <meta name="twitter:url" content="http://www.mauropocobelli.com/index.html" />
-  <meta name="twitter:image" content="http://www.mauropocobelli.com/images/thumbnails.png" />
+  <meta name="twitter:image" content="http://www.mauropocobelli.com/images/hp/thumbnails.png" />
 
-  <!-- Fonts and footer icons-->
-  <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,600,800" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Bootstrap  -->
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <!-- jquery -->
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  <!-- jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
   <!-- Theme style  -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/loader-dark.css">
+
   <!-- Modernizr JS -->
   <script src="js/modernizr-2.6.2.min.js"></script>
   <!-- smooth-scroll -->
   <script src="js/smooth-scroll.js"></script>
-  <!-- ScrollReveal -->
-  <script src="js/scrollreveal.min.js"></script>
+  <!-- parallax image-->
+  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
 
-  <script>
-    (function() {
+  <!-- animsition.css -->
+  <link rel="stylesheet" href="css/animsition.min.css">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0/jquery.min.js"></script>
+  <!-- animsition.js -->
+  <script src="js/animsition.min.js"></script>
 
-      var config = {
-        viewFactor: 0.0001,
-        duration: 1000,
-        distance: "10px",
-        scale: 0.999
-      };
+  <!-- Navbar -->
+  <script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function(){
 
-      window.sr = ScrollReveal(config);
+    el_autohide = document.querySelector('.autohide');
 
-      if (sr.isSupported()) {
-        document.documentElement.classList.add('sr');
-      }
-    })();
+    // add padding-top to bady (if necessary)
+    navbar_height = document.querySelector('.navbar').offsetHeight;
+    document.body.style.paddingTop = navbar_height + 'px';
+
+    if(el_autohide){
+
+      var last_scroll_top = 0;
+      window.addEventListener('scroll', function() {
+        let scroll_top = window.scrollY;
+        if(scroll_top < last_scroll_top) {
+          el_autohide.classList.remove('scrolled-down');
+          el_autohide.classList.add('scrolled-up');
+        }
+        else {
+          el_autohide.classList.remove('scrolled-up');
+          el_autohide.classList.add('scrolled-down');
+        }
+        last_scroll_top = scroll_top;
+
+      });
+      // window.addEventListener
+    }
+    // if
+  });
+  // DOMContentLoaded  end
   </script>
+
+  <!-- view case  -->
+  <style>
+  .HoverDiv:hover img {
+    cursor:url(images/hp/view-case.svg) 40 40, move !important;
+  }
+  </style>
 
 </head>
 
 <body>
 
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="position:absolute;">
+  <!-- ============= navbar ============== -->
+  <nav class="navbar">
 
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
 
-          <a class="navbar-brand navbar-brand-2" href="index.html">Mauro Pocobelli</a>
+      <a class="navbar-brand mp-brand" href="index.html">Mauro Pocobelli</a>
 
-          <div class="collapse navbar-collapse" style="color:white">
-            <ul class="nav navbar-nav navbar-nav-2 navbar-right">
-              <li><a href="index.html">Stories</a></li>
-              <li><a data-scroll href="#About">About</a></li>
-              <li><a href="archive.html">Archive</a></li>
-            </ul>
-          </div>
+      <div class="" id="main_nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html"> Works & About </a></li>
+        </ul>
+      </li>
+    </ul>
+  </div> <!-- navbar-collapse.// -->
 
-        </div>
-      </div>
-    </div>
+</div> <!-- container-fluid.// -->
 
-  </nav>
+</nav>
 
-  <section class="demo">
+<nav class="autohide navbar">
 
-    <header>
+  <div class="container">
 
-      <div class="container-fluid">
-        <div class="row">
+    <a class="navbar-brand mp-brand" href="index.html">Mauro Pocobelli</a>
 
-          <div class="col-xs-12 block">
-            <div class="block cover-home">
-              <h2 class="cover-home-title">Hello, enjoy my graphic portfolio!</h2>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </header>
-
-    <main>
-
-      <div class="container content-wrap content-home block">
-        <div class="row">
-
-          <div class="col-xs-12">
-            <div class="LiberLiber-home" style="position:relative">
-              <a href="stories/liberliber.html" class="">
-
-                <div class="home-text">
-                  <h1 style="color:white;">LiberLiber</h1>
-                  <p style="color:white; ">The Italian Digital Amanuensis Library</p>
-
-                </div>
-                <div class="home-img">
-                  <img src="images/liberliber-home.png" alt="" width="" height="" class="img-responsive ">
-                </div>
-
-              </a>
-            </div>
-          </div>
-
-          <div class="col-xs-6">
-            <div class="Nadir-home" style="position:relative">
-              <a href="stories/nadir.html" class="">
-
-                <div class="home-text">
-                  <h1 style="color:#242A37;">Nadir</h1>
-                  <p style="color:#242A37; ">The Atlas of News</p>
-
-                </div>
-                <div class="home-img">
-                  <img src="images/nadir-home.png" alt="" width="" height="" class="img-responsive ">
-                </div>
-
-              </a>
-            </div>
-          </div>
-
-          <div class="col-xs-6">
-            <div class="as-home" style="position:relative">
-
-              <a href="stories/as-tribute.html" class="">
-
-
-                <div class="home-text">
-                  <h1 style="color:#242A37;">AS Tribute</h1>
-                  <p style="color:#242A37; ">History for new and old generations</p>
-
-                </div>
-                <div class="home-img">
-                  <img src="images/as-home.png" alt="" width="" height="" class="img-responsive ">
-                </div>
-
-              </a>
-
-            </div>
-          </div>
-
-          <div class="col-xs-6">
-            <div class="coloe-home" style="position:relative">
-
-              <a href="stories/coloe.html" class="">
-
-
-                <div class="home-text">
-                  <h1 style="color:#fff;">Coloe</h1>
-                  <p style="color:#fff;">The Coloured Bus Shelter</p>
-
-                </div>
-                <div class="home-img">
-                  <img src="images/coloe-home.png" alt="" width="" height="" class="img-responsive ">
-                </div>
-
-              </a>
-
-            </div>
-          </div>
-
-          <div class="col-xs-6">
-            <div class="bragora-home" style="position:relative">
-
-              <a href="stories/bragora.html" class="">
-
-
-                <div class="home-text" style="margin-bottom:12px;">
-
-                  <h1 style="color:white;">Bragora</h1>
-                  <div class="" style="height:7px"></div>
-                  <p style="color:white">Tha Magic Square</p>
-
-                </div>
-                <div class="home-img">
-                  <img src="images/bragora-home.png" alt="" width="" height="" class="img-responsive ">
-                </div>
-
-              </a>
-
-            </div>
-          </div>
-
-
-
-        </div>
-      </div>
-
-    </main>
-
-  </section>
-
-  <!-- menu -->
-  <div class="button_container button_container-2" id="toggle">
-    <span class="top"></span>
-    <span class="middle"></span>
-    <span class="bottom"></span>
-  </div>
-
-  <div class="overlay overlay-dark" id="overlay">
-
-    <nav class="overlay-menu">
-      <ul>
-        <li><a href="index.html">Stories</a></li>
-        <li><a href="#About">About</a></li>
-        <li><a href="archive.html">Archive</a></li>
+    <div class="" id="main_nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html"> Works & About </a></li>
       </ul>
-    </nav>
+    </li>
+  </ul>
+</div> <!-- navbar-collapse.// -->
 
-  </div>
+</div> <!-- container-fluid.// -->
+
+</nav>
+<!-- ============= navbar end ============== -->
 
 
-  <div class="footer-about" id="About">
+<section class="demo animsition">
 
-    <div class="container">
+  <!-- ============= apertura ============== -->
+  <header>
+    <div class="apertura">
+
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-xl-10">
+
+            <h1>Nice to meet you!</h1>
+
+            <p>UI designer, passionate about branding and illustration. Freelance at Il Sole 24 Ore and open for new collaborations. Currently I am focusing on their design systems to reduce costs and speed up the process, and to have more consistency throughout the products, which are steadily growing in number.</p>
+
+            <p>
+              Contact me at <a href="mailto:hello@mauropocobelli.com" target="_blank">hello@mauropocobelli.com</a>
+              <span>|</span>
+              <a href="mauropocobelli_CV.pdf" target="_blank"> Download my CV</a>
+              <span>|</span>
+              <a href="https://www.linkedin.com/in/mauro-pocobelli-49279982/" target="_blank">Linkedin</a>
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- ============= Works ============== -->
+
+  <main>
+
+    <div class="container content-wrap">
       <div class="row">
-        <div class="col-lg-10 col-lg-offset-1 block">
 
-          <h2 style="padding-bottom:36px">Nice to meet you!</h2>
-          <p style="padding-bottom:24px">Italian graphic designer and freelancer based in Vicenza graduated at Politecnico di Milano and IUAV University of Venice with honors in 2015. My research is manly focused on branding and digital project. The goal of my last projects like
-            <a href="stories/liberliber.html" target="_blank"> LiberLiber </a> and <a href="stories/nadir.html" target="_blank"> Nadir</a> is to define the brand’s soul and connect people to it through interactive environments or digital
-            products. On this website I share my best works, happy surfing!
-          </p>
-          <p>
-            <a href="images/mauropocobelli_CV.pdf" target="_blank"> Download my CV</a> | Contact
-            <a href="mailto:hello@mauropocobelli.com">hello@mauropocobelli.com</a>
-          </p>
-        </div>
-      </div>
-    </div>
+        <!-- ============= collonna ============== -->
+        <!-- ============= 01 ============== -->
 
-  </div>
+        <div class="col-md-6" >
 
-  <footer>
+          <!-- ============= 01 ============== -->
+
+          <div class="card-hp">
+
+            <div class="HoverDiv">
+              <a href="ntplus.html">
+                <picture class="">
+
+                  <source srcset="images/hp/hp-cover-ntplus.webp, images/hp/hp-cover-ntplus.webp 2x" media="(min-width: 768px)">
+                    <img class="thumbnail img-cover img-fluid" srcset="images/hp/hp-cover-ntplus-375.webp, images/hp/hp-cover-ntplus-375.webp 2x">
+
+                  </picture>
+                </a>
+              </div>
+
+              <a href="ntplus.html" class="beta"><h2>Norme & Tributi Plus <span>-></span></h2></a>
+              <p class="caption">New pages for professionals</p>
+            </div>
+
+            <!-- ============= 02 ============== -->
+
+            <div class="card-hp">
+
+              <div class="HoverDiv">
+                <a href="mikli.html">
+                  <picture class="img-fluid">
+
+                    <source srcset="images/hp/hp-cover-mikli.webp, images/hp/hp-cover-mikli.webp 2x" media="(min-width: 768px)">
+                      <img class="thumbnail img-cover img-fluid" srcset="images/hp/hp-cover-mikli-375.webp, images/hp/hp-cover-mikli-375.webp 2x">
+
+                    </picture>
+                  </a>
+                </div>
+
+                <a href="mikli.html" class="beta"><h2>Alain Mikli <span>-></span></h2></a>
+                <p class="caption">Be an influencer</p>
+              </div>
+
+              <!-- ============= 03 ============== -->
+
+              <div class="card-hp">
+
+                <div class="HoverDiv">
+                  <a href="liberliber.html">
+                    <picture class="img-fluid">
+
+                      <source srcset="images/hp/hp-cover-liberliber.webp, images/hp/hp-cover-liberliber.webp 2x" media="(min-width: 768px)">
+                        <img class="thumbnail img-cover img-fluid" srcset="images/hp/hp-cover-liberliber-375.webp, images/hp/hp-cover-liberliber-375.webp 2x">
+
+                      </picture>
+                    </a>
+                  </div>
+
+                  <a href="liberliber.html" class="beta"><h2>Liber Liber<span>-></span></h2></a>
+                  <p class="caption">The Italian Digital Amanuensis Library</p>
+                </div>
 
 
-    <div class="ll-bg-bottom"></div>
-
-    <div class="container">
-      <div class="row footer-1">
-
-        <div class="col-lg-5 col-sm-4">
-          <a class="menu-logo" style="color:white" href="index.html">Mauro Pocobelli</a>
-        </div>
-
-        <div class="col-lg-5 col-sm-5 col-xs-10 menu-footer">
-          <a href="index.html">Stories</a>
-          <a href="#About">About</a>
-          <a href="archive.html">Archive</a>
-        </div>
-
-        <div class="col-lg-2 col-sm-2 col-xs-2 menu-footer-fa">
-          <a href="https://github.com/mpocobelli/portfolio" target="_blank"><i class="fa fa-footer fa-github"></i></a>
-          <a href="https://twitter.com/mauropocobelli" target="_blank"><i class="fa fa-footer fa-twitter"></i></a>
-        </div>
-
-      </div>
-    </div>
-
-    <div style="width:100%; height:1px; background-color:white; opacity:0.1;"></div>
+                </div>
 
 
-    <div class="container">
-      <div class="row footer-2">
-        <div class="col-lg-10 col-lg-offset-1">
+                <!-- ============= collonna ============== -->
+                <!-- ============= 02 ============== -->
 
-          <ul class=" info">
-            <li>Get free this portfolio template on <a href="https://github.com/mpocobelli/portfolio" target="_blank">Github </a> <span class="info-span"> | </span></li>
-            <li>mail: <a href="mailto:hello@mauropocobelli.com">hello@mauropocobelli.com </a> <span class="info-span"> | </span> </li>
-            <li>whatapp: <a href="tel:0039-392-8070458">+39 392 8070458</a></li>
-          </ul>
+                <div class="col-md-6 hp-column-right">
 
-        </div>
-      </div>
+                  <!-- ============= 01 ============== -->
 
-    </div>
+                    <div class="card-hp">
+
+                      <div class="HoverDiv">
+                        <a href="biblioteca.html">
+                          <picture class="img-fluid">
+
+                            <source srcset="images/hp/hp-cover-biblioteca.webp, images/hp/hp-cover-biblioteca.webp 2x" media="(min-width: 768px)">
+                              <img class="thumbnail img-cover img-fluid" srcset="images/hp/hp-cover-biblioteca-375.webp, images/hp/hp-cover-biblioteca-375.webp 2x">
+
+                            </picture>
+                          </a>
+                        </div>
+
+                        <a href="biblioteca.html" class="beta"><h2>Biblioteca24<span>-></span></h2></a>
+                        <p class="caption">A new library for Il Sole 24 Ore</p>
+                      </div>
+
+                    <!-- ============= 02 ============== -->
+
+                    <div class="card-hp">
+
+                      <div class="HoverDiv">
+                        <a href="welcome.html">
+                          <picture class="img-fluid">
+
+                            <source srcset="images/hp/hp-cover-welcome.webp, images/hp/hp-cover-welcome.webp 2x" media="(min-width: 768px)">
+                              <img class="thumbnail img-cover img-fluid" srcset="images/hp/hp-cover-welcome-375.webp, images/hp/hp-cover-welcome-375.webp 2x">
+
+                            </picture>
+                          </a>
+                        </div>
+
+                        <a href="welcome.html" class="beta"><h2>Welcome <span>-></span></h2></a>
+                        <p class="caption">Travel safety with Airbnb</p>
+                      </div>
+
+                      <!-- ============= 03 ============== -->
+
+                      <div class="card-hp">
+
+                        <div class="HoverDiv">
+                          <a href="ayrton-senna.html">
+                            <picture class="img-fluid">
+
+                              <source srcset="images/hp/hp-cover-as.webp, images/hp/hp-cover-as.webp 2x" media="(min-width: 768px)">
+                                <img class="thumbnail img-cover img-fluid" srcset="images/hp/hp-cover-as-375.webp, images/hp/hp-cover-as-375.webp 2x">
+
+                              </picture>
+                            </a>
+                          </div>
+
+                          <a href="ayrton-senna.html" class="beta"><h2>AS Tribute <span>-></span></h2></a>
+                          <p class="caption">History for new and old generations</p>
+                        </div>
 
 
+                        </div>
 
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
-    <!-- jQuery Easing -->
-    <script src="js/jquery.easing.1.3.js"></script>
-    <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Waypoints -->
-    <script src="js/jquery.waypoints.min.js"></script>
-    <!-- loader -->
-    <script src="js/pace.min.js"></script>
-    <!-- menu -->
-    <script src="js/fullscreen-menu.js"></script>
+                      </div>
+                    </div>
 
-    <!-- ScrollReveals -->
-    <script>
-      var hero = {
-        origin: "top",
-        distance: "24px",
-        duration: 1500,
-        scale: 1.05
-      };
+                  </main>
 
-      var intro = {
-        origin: "bottom",
-        distance: "64px",
-        duration: 900,
-        delay: 1500,
-        scale: 1
-      };
+                </section>
 
-      var github = {
-        origin: "top",
-        distance: "32px",
-        duration: 600,
-        delay: 1800,
-        scale: 0
-      };
+                <footer class="footer-hp">
 
-      sr.reveal(".demo .block", {
-        // reset: true,
-        viewOffset: {
-          top: 30
-        }
-      });
-      sr.reveal(".hero", hero);
-      sr.reveal(".intro", intro);
-      sr.reveal(".hero .github", github);
-      sr.reveal(".seq-1", 100);
+                  <div class="container footer-back">
+                    <div class="d-flex justify-content-center bd-highlight mb-3 ">
+                      <div class="p-2 bd-highlight">
+                        <a href="#">
+                          <svg width="80" height="80" viewBox="0 0 80 80" id="back-to-top">
+                            <title>back-to-top</title>
+                            <g id="back-to-top" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <circle id="Oval" fill="#FBF9F0" cx="40" cy="40" r="40"></circle>
+                              <path d="M40,0 C62.09139,0 80,17.90861 80,40 C80,62.09139 62.09139,80 40,80 C17.90861,80 0,62.09139 0,40 C0,17.90861 17.90861,0 40,0 Z M49.6022727,49.8522727 C48.75,49.8522727 48.75,49.8522727 48.2528409,50.1335227 C47.7556818,50.4147727 47.7556818,50.4147727 47.4914773,50.7698864 C47.2801136,51.0539773 47.2801136,51.0539773 47.1432955,51.25625 L47.1432955,51.25625 L47.0795455,51.3522727 L46.9204545,51.3522727 L46.9204545,49.9659091 L45.625,49.9659091 L45.625,61.9659091 L46.9659091,61.9659091 L46.9659091,57.3522727 L47.0795455,57.3522727 L47.1436364,57.4526136 C47.2818182,57.6630682 47.2818182,57.6630682 47.5,57.9517045 C47.7727273,58.3125 47.7727273,58.3125 48.2784091,58.59375 C48.7840909,58.875 48.7840909,58.875 49.625,58.875 C50.7159091,58.875 50.7159091,58.875 51.5511364,58.3210227 C52.3863636,57.7670455 52.3863636,57.7670455 52.8579545,56.7528409 C53.3295455,55.7386364 53.3295455,55.7386364 53.3295455,54.3522727 C53.3295455,52.9772727 53.3295455,52.9772727 52.8579545,51.9659091 C52.3863636,50.9545455 52.3863636,50.9545455 51.5454545,50.4034091 C50.7045455,49.8522727 50.7045455,49.8522727 49.6022727,49.8522727 Z M39.625,49.8522727 C38.4431818,49.8522727 38.4431818,49.8522727 37.5539773,50.4147727 C36.6647727,50.9772727 36.6647727,50.9772727 36.1676136,51.9943182 C35.6704545,53.0113636 35.6704545,53.0113636 35.6704545,54.375 C35.6704545,55.7272727 35.6704545,55.7272727 36.1676136,56.7386364 C36.6647727,57.75 36.6647727,57.75 37.5539773,58.3125 C38.4431818,58.875 38.4431818,58.875 39.625,58.875 C40.8068182,58.875 40.8068182,58.875 41.6960227,58.3125 C42.5852273,57.75 42.5852273,57.75 43.0823864,56.7386364 C43.5795455,55.7272727 43.5795455,55.7272727 43.5795455,54.375 C43.5795455,53.0113636 43.5795455,53.0113636 43.0823864,51.9943182 C42.5852273,50.9772727 42.5852273,50.9772727 41.6960227,50.4147727 C40.8068182,49.8522727 40.8068182,49.8522727 39.625,49.8522727 Z M35.3522727,47.0568182 L26.625,47.0568182 L26.625,48.3068182 L30.2840909,48.3068182 L30.2840909,58.6931818 L31.6931818,58.6931818 L31.6931818,48.3068182 L35.3522727,48.3068182 L35.3522727,47.0568182 Z M39.625,51.0568182 C40.5227273,51.0568182 40.5227273,51.0568182 41.1022727,51.5227273 C41.6818182,51.9886364 41.6818182,51.9886364 41.9602273,52.7443182 C42.2386364,53.5 42.2386364,53.5 42.2386364,54.375 C42.2386364,55.25 42.2386364,55.25 41.9602273,56 C41.6818182,56.75 41.6818182,56.75 41.1022727,57.2102273 C40.5227273,57.6704545 40.5227273,57.6704545 39.625,57.6704545 C38.7272727,57.6704545 38.7272727,57.6704545 38.1477273,57.2102273 C37.5681818,56.75 37.5681818,56.75 37.2897727,56 C37.0113636,55.25 37.0113636,55.25 37.0113636,54.375 C37.0113636,53.5 37.0113636,53.5 37.2897727,52.7443182 C37.5681818,51.9886364 37.5681818,51.9886364 38.1477273,51.5227273 C38.7272727,51.0568182 38.7272727,51.0568182 39.625,51.0568182 Z M49.4431818,51.0568182 C50.2954545,51.0568182 50.2954545,51.0568182 50.8607955,51.4914773 C51.4261364,51.9261364 51.4261364,51.9261364 51.7073864,52.6676136 C51.9886364,53.4090909 51.9886364,53.4090909 51.9886364,54.3295455 C51.9886364,55.2613636 51.9886364,55.2613636 51.7017045,56.0198864 C51.4147727,56.7784091 51.4147727,56.7784091 50.8494318,57.2244318 C50.2840909,57.6704545 50.2840909,57.6704545 49.4431818,57.6704545 C48.6363636,57.6704545 48.6363636,57.6704545 48.0795455,57.2471591 C47.5227273,56.8238636 47.5227273,56.8238636 47.2329545,56.0710227 C46.9431818,55.3181818 46.9431818,55.3181818 46.9431818,54.3295455 C46.9431818,53.3522727 46.9431818,53.3522727 47.2272727,52.6164773 C47.5113636,51.8806818 47.5113636,51.8806818 48.0681818,51.46875 C48.625,51.0568182 48.625,51.0568182 49.4431818,51.0568182 Z M40.0596591,15.3068182 L29.8778409,25.4886364 L31.6278409,27.2386364 L38.8096591,20.0340909 L38.8096591,38.6931818 L41.3096591,38.6931818 L41.3096591,20.0340909 L48.5142045,27.2386364 L50.2414773,25.4886364 L40.0596591,15.3068182 Z" id="Combined-Shape" fill="#9B0878"></path>
+                            </g>
+                          </svg>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
-      function addCommasToNum(num) {
-        return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-      }
-    </script>
+                <div class="container footer">
+                  <div class="row footer-line">
+                    <div class="col-md-6 mp-brand"><a class="" href="index.html">Mauro Pocobelli</a></div>
+                    <div class="col-md-6"><p class="caption footer-caption">Download this template on <a href="https://github.com/mpocobelli/portfolio" target="_blank">Github</a></p></div>
+                  </div>
+                </div>
 
-    <!-- SmoothScroll -->
-    <script>
-      smoothScroll.init({
-        speed: 1200, // Integer. How fast to complete the scroll in milliseconds
-        easing: 'easeInOutCubic', // Easing pattern to use
-        offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
-      });
-    </script>
+                <!-- loader -->
+                <script>
+                $(document).ready(function() {
+                  $(".animsition").animsition({
+                    inClass: 'fade-in-up',
+                    outClass: 'fade-out-up',
+                    inDuration: 1500,
+                    outDuration: 800,
+                    linkElement: '.animsition-link',
+                    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+                    loading: true,
+                    loadingParentElement: 'body', //animsition wrapper element
+                    loadingClass: 'animsition-loading',
+                    loadingInner: '', // e.g '<img src="loading.svg" />'
+                    timeout: false,
+                    timeoutCountdown: 5000,
+                    onLoadEvent: true,
+                    browser: [ 'animation-duration', '-webkit-animation-duration'],
+                    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+                    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+                    overlay : false,
+                    overlayClass : 'animsition-overlay-slide',
+                    overlayParentElement : 'body',
+                    transition: function(url){ window.location.href = url; }
+                  });
+                });
+                </script>
 
-    <script>
-      if (window.location.hash) {
-        var anchor = document.querySelector(window.location.hash); // Get the anchor
-        var toggle = document.querySelector('a[href*="' + window.location.hash + '" ]'); // Get the toggle (if one exists)
-        var options = {}; // Any custom options you want to use would go here
-        smoothScroll.animateScroll(anchor, toggle, options);
-      }
-    </script>
+                <!-- scroll image -->
+                <script>
+                var image = document.getElementsByClassName('thumbnail');
+                new simpleParallax(image, {
+                  delay: .6,
+                  transition: 'cubic-bezier(0,0,0,1)'
+                });
+                </script>
 
-  </footer>
+                <!-- SmoothScroll -->
+                <script>
+                smoothScroll.init({
+                  speed: 100, // Integer. How fast to complete the scroll in milliseconds
+                  easing: 'easeInOutCubic', // Easing pattern to use
+                  offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+                });
+                </script>
 
-</body>
+                <script>
+                if (window.location.hash) {
+                  var anchor = document.querySelector(window.location.hash); // Get the anchor
+                  var toggle = document.querySelector('a[href*="' + window.location.hash + '" ]'); // Get the toggle (if one exists)
+                  var options = {}; // Any custom options you want to use would go here
+                  smoothScroll.animateScroll(anchor, toggle, options);
+                }
+                </script>
 
-</html>
+                <!-- jQuery -->
+                <script src="js/jquery.min.js"></script>
+                <!-- jQuery Easing -->
+                <script src="js/jquery.easing.1.3.js"></script>
+                <!-- Bootstrap -->
+                <script src="js/bootstrap.min.js"></script>
+                <!-- Waypoints -->
+                <script src="js/jquery.waypoints.min.js"></script>
+                <!-- loader -->
+                <script src="js/pace.min.js"></script>
+                <!-- menu -->
+                <script src="js/fullscreen-menu.js"></script>
+
+              </footer>
+
+            </body>
+
+            </html>
